@@ -10,7 +10,11 @@ class Dashboard extends CI_Controller {
 
     //Load Halaman dashboard
     public function index() {  
-        $data["posts"] = $this->hendi_post->getAll();
+        $id = $this->session->userdata('id');
+        $data["posts"] = $this->db->get_where('hendi_posts', ["user_id" => $id])->result_array();
+        // var_dump($data);
+        // die;
+        // $data["posts"] = $this->hendi_post->getAll();
         $this->load->view('hendi_account/v_dashboard',$data);  
     }
 }  

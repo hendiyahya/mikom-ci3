@@ -48,21 +48,18 @@
               <?php foreach ($posts as $post): ?>
               <tr>
                 <td>
-                  <?php echo $post->user_id ?>
+                  <?php echo $post['user_id'] ?>
                 </td>
                 <td>
-                  <?php echo $post->title ?>
+                  <?php echo $post['title']  ?>
                 </td>
-                <!-- <td>
-                  <img src="<?php echo base_url('upload/post/'.$post->image) ?>" width="64" />
-                </td> -->
                 <td class="small">
-                                        <?php echo substr($post->body, 0, 120) ?>...</td>
+                  <?php echo substr($post['body'] , 0, 120) ?>...</td>
                 <td width="250">
 
-                  <a href="<?php echo site_url('hendi/Hendi_PostController/edit/'.$post->id) ?>"
+                  <a href="<?php echo site_url('hendi/Hendi_PostController/edit/'.$post["id"]) ?>"
                   class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-                  <a href="<?php echo site_url('hendi/Hendi_PostController/delete/'.$post->id) ?>"
+                  <a href="<?php echo site_url('hendi/Hendi_PostController/delete/'.$post["id"]) ?>"
                   href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
                 </td>
               </tr>
