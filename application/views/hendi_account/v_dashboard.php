@@ -13,6 +13,8 @@
     <p>
     Selamat datang di halaman dashboard, <?php echo ucfirst($this->session->userdata('username')); ?>!
     Untuk logout dari sistem, silakan klik <?php echo anchor('login/logout','di sini...'); ?>
+
+    <br> User ID : <?php echo ucfirst($this->session->userdata('id')); ?>
     </p>
   </div>
   
@@ -34,6 +36,8 @@
           <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
+                <th>User ID</th>
+                <!-- <th>Photo</th> -->
                 <th>Judul</th>
                 <!-- <th>Photo</th> -->
                 <th>Konten</th>
@@ -44,6 +48,9 @@
               <?php foreach ($posts as $post): ?>
               <tr>
                 <td>
+                  <?php echo $post->user_id ?>
+                </td>
+                <td>
                   <?php echo $post->title ?>
                 </td>
                 <!-- <td>
@@ -52,7 +59,7 @@
                 <td class="small">
                                         <?php echo substr($post->body, 0, 120) ?>...</td>
                 <td width="250">
-                 
+
                   <a href="<?php echo site_url('hendi/Hendi_PostController/edit/'.$post->id) ?>"
                   class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
                   <a href="<?php echo site_url('hendi/Hendi_PostController/delete/'.$post->id) ?>"

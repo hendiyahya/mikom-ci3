@@ -13,7 +13,8 @@ class Hendi_PostController extends CI_Controller
 
     public function index()
     {
-        $data["posts"] = $this->hendi_post->getAll();
+        $id = $this->session->userdata('id');
+        $data["posts"] = $this->hendi_post->where('id',$id);
         $this->load->view("hendi_admin/post/list", $data);
     }
 
