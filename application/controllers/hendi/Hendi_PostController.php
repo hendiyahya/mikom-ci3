@@ -47,6 +47,7 @@ class Hendi_PostController extends CI_Controller
 
         $data["post"] = $post->getById($id);
         if (!$data["post"]) show_404();
+
         
         $this->load->view("hendi_admin/post/edit_form", $data);
     }

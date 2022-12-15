@@ -29,6 +29,16 @@ class Hendi_post extends CI_Model
         return $this->db->get($this->_table)->result();
     }
     
+    public function JoinUsers()
+    {
+        // $this->db->select('*');
+        $this->db->from('hendi_posts');
+        $this->db->join('hendi_users', 'hendi_users.id_user = hendi_posts.user_id');
+        $this->db->join('hendi_categories', 'hendi_categories.id = hendi_posts.category_id');
+
+        return $this->db->get()->result();
+    }
+    
     public function getById($id)
     {
         return $this->db->get_where($this->_table, ["id" => $id])->row_array();
@@ -37,7 +47,6 @@ class Hendi_post extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        // $this->id = uniqid();
         $this->title = $post["title"];
         $this->body = $post["body"];
         $this->category_id = 1;
@@ -48,10 +57,15 @@ class Hendi_post extends CI_Model
     public function update()
     {
         $post = $this->input->post();
-        $this->id = $post["id"];
-        $this->title = $post["title"];
-        $this->body = $post["body"];
-        return $this->db->update($this->_table, $this, array('id' => $post['id']));
+        $data = $this->getById($post["id"]);
+        // var_dump($post);
+        // die;
+        // $this->user_id = $post["user_id"];
+        // $this->category_id = $post["category_id"];
+        // $this->id = $post["id"];
+        $data["title"] = $post["title"];
+        $data["body"] = $post["body"];
+        return $this->db->update($this->_table, $data, array('id' => $post['id']));
     }
 
     public function delete($id)

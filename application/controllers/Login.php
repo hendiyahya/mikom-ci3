@@ -12,7 +12,7 @@ class Login extends CI_Controller {
 	    $valid->set_rules('password','Password','required');  
 
         if($valid->run()) {  
-            $this->hendi_login->login($username,$password, base_url('dashboard'), base_url('login'));  
+            $this->hendi_login->login($username,$password, base_url('beranda'), base_url('login'));  
         }  
     	// End fungsi login  
         $this->load->view('hendi_account/v_login');  

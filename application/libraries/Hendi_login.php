@@ -46,7 +46,7 @@ class Hendi_login {
 			$this->CI->session->set_userdata('id', $id);
 			 
 			//redirect ke halaman dashboard
-			redirect(site_url('dashboard'));
+			redirect(site_url('/'));
 		}else{
 			 
 			//jika tidak ada, set notifikasi dalam flashdata.

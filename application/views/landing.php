@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="assets/dist/img/logo.png">
 
     <title>Landing Page</title>
 
@@ -19,14 +19,21 @@
   <body>
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal">MIKOM UPI</h5>
+      <a class="my-0 mr-md-auto font-weight-normal" href="/">
+        <img class="navbar-brand-dark common" src="/assets/img/logo.png" height="30" alt="Logo light">
+      </a>
       <!-- <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Features</a>
         <a class="p-2 text-dark" href="#">Enterprise</a>
         <a class="p-2 text-dark" href="#">Support</a>
         <a class="p-2 text-dark" href="#">Pricing</a>
       </nav> -->
-      <a class="btn btn-outline-primary" href="#">Daftar</a>
+      <?php if(isset($_SESSION["username"])){?>
+        <a class="btn btn-danger mr-2" href="/Login/Logout">Logout</a>
+        <!-- <a class="btn btn-primary" href="/Login">Dashboard</a> -->
+      <?php } else {?>
+        <a class="btn btn-primary" href="/Login">Login</a>
+      <?php } ?>
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -39,55 +46,55 @@
         
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Ade Ariyansyah</h4>
+            <h5 class="my-0 font-weight-normal">Ade Ariyansyah</h5>
           </div>
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Pengabdian </h3>
-            <p>Deskripsi</p>
+            <p>Menyediakan informasi mengenai Pengabdian yang dilakukan Depilkom</p>
             <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
           </div>
         </div>
 
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">M. Ramadan Alghifary</h4>
+            <h5 class="my-0 font-weight-normal">M. Ramadan Alghifary</h5>
           </div>
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Penelitian</h3>
-            <p>Deskripsi</p>
+            <p>Menyediakan informasi mengenai topik penelitian dari berbagai KBK</p>
             <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
           </div>
         </div>
 
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Nenden Citra S.N</h4>
+            <h5 class="my-0 font-weight-normal">Nenden Citra S.N</h5>
           </div>
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Kemahasiswaan</h3>
-            <p>Deskripsi</p>
+            <p>Menyediakan informasi mengenai kegiatan dan artikel kemahasiswaan</p>
             <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
           </div>
         </div>
 
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Makhi Zainul U</h4>
+            <h5 class="my-0 font-weight-normal">Makhi Zainul U</h5>
           </div>
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Beasiswa</h3>
-            <p>Deskripsi</p>
+            <p>Menyediakan informasi mengenai kesempatan beasiswa yang bisa diikuti</p>
             <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
           </div>
         </div>
 
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Hendi Yahya</h4>
+            <h5 class="my-0 font-weight-normal">Hendi Yahya</h5>
           </div>
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Forum</h3>
-            <p>Merupakan modul fitur dimana user bisa bertanya dan bertukar pendapat mengenai sebuah topik.</p>
+            <p>Menyediakan wadah untuk mahasiswa Depilkom bertanya dan bertukar pendapat mengenai sebuah topik.</p>
             <a href="Beranda/index" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
           </div>
         </div>
@@ -95,8 +102,11 @@
 
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
+          
           <div class="col-12 col-md">
-            MIKOM UPI
+            <a href="/">
+              <img class="navbar-brand-dark common" src="/assets/img/logo.png" height="30" alt="Logo light">
+            </a>
             <small class="d-block mb-3 text-muted">&copy; 2022</small>
           </div>
           <div class="col-6 col-md">

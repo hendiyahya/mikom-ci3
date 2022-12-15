@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,10 +9,8 @@
 
 <body id="page-top">
 
-	<?php $this->load->view("hendi_admin/_partials/navbar.php") ?>
 	<div id="wrapper">
 
-		<?php $this->load->view("hendi_admin/_partials/sidebar.php") ?>
 
 		<div id="content-wrapper">
 
@@ -37,24 +37,23 @@
 						<!-- Note: atribut action dikosongkan, artinya action-nya akan diproses 
 							oleh controller tempat vuew ini digunakan. Yakni index.php/hendi_admin/posts/edit/ID --->
 
-							<input type="hidden" name="id" value="<?php echo $post->id?>" />
+							<input type="text" name="id" value="<?php echo $post['id'] ?>" />
+							<input type="text" name="category_id" value="<?php echo $post['category_id'] ?>" />
+							<input type="text" name="user_id" value="<?php echo $post['user_id'] ?>" />
 
 							<div class="form-group">
 								<label for="title">Name*</label>
 								<input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"
-								 type="text" name="title" placeholder="post name" value="<?php echo $post->title ?>" />
+								 type="text" name="title" placeholder="post name" value="<?php echo $post['title'] ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('name') ?>
 								</div>
 							</div>
 
-
-
-
 							<div class="form-group">
 								<label for="title">body*</label>
 								<textarea class="form-control <?php echo form_error('body') ? 'is-invalid':'' ?>"
-								 name="body" placeholder="post body..."><?php echo $post->body ?></textarea>
+								 name="body" placeholder="post body..."><?php echo $post['body'] ?></textarea>
 								<div class="invalid-feedback">
 									<?php echo form_error('body') ?>
 								</div>
@@ -74,7 +73,6 @@
 				<!-- /.container-fluid -->
 
 				<!-- Sticky Footer -->
-				<?php $this->load->view("hendi_admin/_partials/footer.php") ?>
 
 			</div>
 			<!-- /.content-wrapper -->
@@ -82,9 +80,6 @@
 		</div>
 		<!-- /#wrapper -->
 
-		<?php $this->load->view("hendi_admin/_partials/scrolltop.php") ?>
-
-		<?php $this->load->view("hendi_admin/_partials/js.php") ?>
 
 </body>
 
