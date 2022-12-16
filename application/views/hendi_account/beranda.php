@@ -8,15 +8,14 @@
 
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <a class="my-0 mr-auto font-weight-normal" href="/">
+      <a class="my-0 mr-auto font-weight-normal col-9" href="/">
         <img class="navbar-brand-dark common" src="/assets/img/logo.png" height="30" alt="Logo light">
       </a>
-      <!-- <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-      </nav> -->
+      <?php if(isset($_SESSION["username"])){?>
+        <a>Halo, <?php echo ucfirst($this->session->userdata('username')); ?></a>
+        <a class="btn btn-danger mx-4" href="/Login/Logout">Logout</a>
+      <?php } ?>
+      
       
     </div>
 
