@@ -49,6 +49,7 @@
               <tr>
                 <!-- <th>Kategori</th> -->
                 <th>Judul</th>
+                <th>Kategori</th>
                 <th>Konten</th>
                 <th>Action</th>
 
@@ -57,11 +58,12 @@
             <tbody>
               <?php foreach ($posts as $post): ?>
               <tr>
-                <!-- <td>
-                  <?php echo $post['category_id'] ?>
-                </td> -->
+                
                 <td>
                   <?php echo $post['title']  ?>
+                </td>
+                <td>
+                  <?php echo $post['name'] ?>
                 </td>
                 <td class="small">
                   <?php echo $post['body'] ?></td>

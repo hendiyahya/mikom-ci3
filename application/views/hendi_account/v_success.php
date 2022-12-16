@@ -35,6 +35,9 @@
     <div class="row justify-content-center mt-8">
       <div class="col-md-4">
         <h3><?php echo $message; ?></h3>
+
+        <h5>Sekarang Anda Bisa Login</h5>
+        <a class="btn btn-primary" href="/login">Login</a>
         
       </div>
     </div>

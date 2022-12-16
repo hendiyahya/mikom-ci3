@@ -11,7 +11,9 @@ class Dashboard extends CI_Controller {
     //Load Halaman dashboard
     public function index() {  
         $id = $this->session->userdata('id');
-        $data["posts"] = $this->db->get_where('hendi_posts', ["user_id" => $id])->result_array();
+        $data["posts"] = $this->hendi_post->JoinCategoryByID();
+        var_dump($data);
+        // die;
         // var_dump($data);
         // die;
         // $data["posts"] = $this->hendi_post->getAll();

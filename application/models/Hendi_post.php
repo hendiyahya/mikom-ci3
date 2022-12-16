@@ -38,6 +38,16 @@ class Hendi_post extends CI_Model
 
         return $this->db->get()->result();
     }
+
+    public function JoinCategoryByID()
+    {
+        $id = $this->session->userdata('id');
+        // $this->db->from('hendi_posts');
+        $this->db->join('hendi_categories', 'hendi_categories.id = hendi_posts.category_id');
+        return $this->db->get_where('hendi_posts', ["user_id" => $id])->result_array();
+        // $data["posts"] = $this->db->get_where('hendi_posts', ["user_id" => $id])->result_array();
+        // return $this->db->get()->result();
+    }
     
     public function getById($id)
     {
@@ -50,7 +60,7 @@ class Hendi_post extends CI_Model
         $this->title = $post["title"];
         $this->body = $post["body"];
         $this->category_id = 1;
-        $this->user_id = 1;
+        $this->user_id = $this->session->userdata('id');
         return $this->db->insert($this->_table, $this);
     }
 
