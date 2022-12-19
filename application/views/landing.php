@@ -95,7 +95,7 @@
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Forum</h3>
             <p>Menyediakan wadah untuk mahasiswa Depilkom bertanya dan bertukar pendapat mengenai sebuah topik.</p>
-            <a href="Beranda/index" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
+            <a href="hendi/Beranda/index" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
           </div>
         </div>
       </div>

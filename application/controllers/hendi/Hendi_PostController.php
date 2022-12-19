@@ -7,9 +7,9 @@ class Hendi_PostController extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model("hendi_post");
-        $this->load->model("hendi_categories");
-        $this->load->model("hendi_comment");
+        $this->load->model("hendi/hendi_post");
+        $this->load->model("hendi/hendi_categories");
+        $this->load->model("hendi/hendi_comment");
         $this->load->library('form_validation');
         $this->hendi_login->cek_login(); 
     }
@@ -66,7 +66,7 @@ class Hendi_PostController extends CI_Controller
         $this->session->set_flashdata('success2', 'Berhasil dihapus');
         
         if ($this->hendi_post->delete($id)) {
-            redirect(site_url('Dashboard/index'));
+            redirect(site_url('/hendi/Hendi_PostController'));
         }
     }
 }

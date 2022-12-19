@@ -29,7 +29,7 @@
               <h4>Dashboard</h4>
           </div>
           <?php if(isset($_SESSION["username"])){?>
-            <a class="btn btn-primary mb-2" href="/Dashboard">Dashboard</a>
+            <a class="btn btn-primary mb-2" href="/hendi/Hendi_PostController">Dashboard</a>
           <?php }?>
 
 

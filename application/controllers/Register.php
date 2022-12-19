@@ -7,7 +7,7 @@ class Register extends CI_Controller {
 		parent::__construct();
 		$this->load->library(array('form_validation'));
 		$this->load->helper(array('url','form'));
-		$this->load->model('hendi_account'); //call model
+		$this->load->model("hendi/hendi_account"); //call model
 	}
  
 	public function index() {

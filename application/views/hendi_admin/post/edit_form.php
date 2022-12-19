@@ -42,7 +42,7 @@
 				<div class="card mb-3">
 					<div class="card-header">
 
-						<a href="<?php echo site_url('Dashboard/index') ?>"><i class="fas fa-arrow-left"></i>
+						<a href="<?php echo site_url('/hendi/Hendi_PostController') ?>"><i class="fas fa-arrow-left"></i>
 							Back</a>
 					</div>
 					<div class="card-body">

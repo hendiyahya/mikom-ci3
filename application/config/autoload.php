@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('hendi_account'); 
+$autoload['model'] = array('hendi/hendi_account'); 

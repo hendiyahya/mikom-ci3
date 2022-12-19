@@ -41,7 +41,7 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a class="btn btn-primary" href="<?php echo site_url('Dashboard/index') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+						<a class="btn btn-primary" href="<?php echo site_url('/hendi/Hendi_PostController') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
 					</div>
 					<div class="card-body">
 

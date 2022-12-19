@@ -6,9 +6,9 @@ class Beranda extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model("hendi_post");
-        $this->load->model("hendi_categories");
-        $this->load->model("hendi_comment");
+        $this->load->model("hendi/hendi_post");
+        $this->load->model("hendi/hendi_categories");
+        $this->load->model("hendi/hendi_comment");
         $this->load->library('form_validation');
     }
 	
