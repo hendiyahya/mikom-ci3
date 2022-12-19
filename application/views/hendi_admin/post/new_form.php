@@ -55,7 +55,17 @@
 								</div>
 							</div>
 
-
+							<div class="form-group">
+								<label for="exampleFormControlSelect1">Kategori*</label>
+								<select class="form-control" id="exampleFormControlSelect1" name="category_id">
+								<?php foreach ($categories as $category): ?>
+								<option value="<?php echo $category->id ?>"><?php echo $category->name ?></option>
+								<?php endforeach ?>
+								</select>
+								<div class="invalid-feedback">
+									<?php echo form_error('body') ?>
+								</div>
+							</div>
 
 							<div class="form-group mb-4">
 								<label for="title">Konten*</label>

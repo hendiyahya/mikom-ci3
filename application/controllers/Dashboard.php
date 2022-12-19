@@ -5,6 +5,7 @@ class Dashboard extends CI_Controller {
     function __construct(){  
         parent::__construct();  
         $this->load->model("hendi_post");
+        $this->load->model("hendi_categories");
         $this->hendi_login->cek_login();  
     }  
 
@@ -12,8 +13,7 @@ class Dashboard extends CI_Controller {
     public function index() {  
         $id = $this->session->userdata('id');
         $data["posts"] = $this->hendi_post->JoinCategoryByID();
-        var_dump($data);
-        // die;
+        $data["categories"] = $this->hendi_categories->getAll();
         // var_dump($data);
         // die;
         // $data["posts"] = $this->hendi_post->getAll();

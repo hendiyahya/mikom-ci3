@@ -8,14 +8,19 @@ class Hendi_PostController extends CI_Controller
     {
         parent::__construct();
         $this->load->model("hendi_post");
+        $this->load->model("hendi_categories");
+        $this->load->model("hendi_comment");
         $this->load->library('form_validation');
+        $this->hendi_login->cek_login(); 
     }
 
     public function index()
     {
-        $id = $this->session->userdata('id');
-        $data["posts"] = $this->hendi_post->where('id',$id);
-        $this->load->view("hendi_admin/post/list", $data);
+        $data["posts"] = $this->hendi_post->JoinCategoryByID();
+        $data["categories"] = $this->hendi_categories->getAll();
+        $data["comments"] = $this->hendi_comment->getAll();
+
+        $this->load->view("hendi_admin/post/index", $data);
     }
 
     public function add()
@@ -29,7 +34,9 @@ class Hendi_PostController extends CI_Controller
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
 
-        $this->load->view("hendi_admin/post/new_form");
+        $data["categories"] = $this->hendi_categories->getAll();
+
+        $this->load->view("hendi_admin/post/new_form",$data);
     }
 
     public function edit($id = null)
@@ -46,6 +53,7 @@ class Hendi_PostController extends CI_Controller
         }
 
         $data["post"] = $post->getById($id);
+        $data["categories"] = $this->hendi_categories->getAll();
         if (!$data["post"]) show_404();
 
         

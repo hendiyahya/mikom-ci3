@@ -8,6 +8,7 @@ class Beranda extends CI_Controller {
         parent::__construct();
         $this->load->model("hendi_post");
         $this->load->model("hendi_categories");
+        $this->load->model("hendi_comment");
         $this->load->library('form_validation');
     }
 	
@@ -17,9 +18,11 @@ class Beranda extends CI_Controller {
             //alihkan ke halaman login
 			redirect(site_url('login'));
         }
+        
 
 		$data["posts"] = $this->hendi_post->joinUsers();
         $data["categories"] = $this->hendi_categories->getAll();
+        $data["comments"] = $this->hendi_comment->JoinUsers();
         // var_dump($data["posts"]);
         // die;
         $this->load->view("hendi_account/beranda", $data);

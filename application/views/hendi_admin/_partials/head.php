@@ -12,4 +12,4 @@
 
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>Mikom UPI | {{ $title }}</title>
+    <title>Mikom UPI</title>

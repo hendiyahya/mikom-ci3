@@ -19,7 +19,7 @@
     <!-- {{-- My Style --}} -->
     <!-- <link rel="stylesheet" href="/css/style.css"> -->
 
-    <title>Mikom UPI | {{ $title }}</title>
+    <title>Mikom UPI | Success</title>
 </head>
 
 <body>

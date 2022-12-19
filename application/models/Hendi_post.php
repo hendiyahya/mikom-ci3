@@ -43,7 +43,7 @@ class Hendi_post extends CI_Model
     {
         $id = $this->session->userdata('id');
         // $this->db->from('hendi_posts');
-        $this->db->join('hendi_categories', 'hendi_categories.id = hendi_posts.category_id');
+        // $this->db->join('hendi_categories', 'hendi_categories.id = hendi_posts.category_id','left');
         return $this->db->get_where('hendi_posts', ["user_id" => $id])->result_array();
         // $data["posts"] = $this->db->get_where('hendi_posts', ["user_id" => $id])->result_array();
         // return $this->db->get()->result();
@@ -59,7 +59,7 @@ class Hendi_post extends CI_Model
         $post = $this->input->post();
         $this->title = $post["title"];
         $this->body = $post["body"];
-        $this->category_id = 1;
+        $this->category_id = $post["category_id"];
         $this->user_id = $this->session->userdata('id');
         return $this->db->insert($this->_table, $this);
     }
@@ -73,6 +73,7 @@ class Hendi_post extends CI_Model
         // $this->user_id = $post["user_id"];
         // $this->category_id = $post["category_id"];
         // $this->id = $post["id"];
+        $data["category_id"] = $post["category_id"];
         $data["title"] = $post["title"];
         $data["body"] = $post["body"];
         return $this->db->update($this->_table, $data, array('id' => $post['id']));
