@@ -52,7 +52,7 @@
         <div class="card-body">
           <h3 class="card-title pricing-card-title">Pengabdian </h3>
           <p>Menyediakan informasi mengenai Pengabdian yang dilakukan Depilkom</p>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
+          <a href="ade_controllers/beranda/index" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
         </div>
       </div>
 
@@ -74,7 +74,7 @@
         <div class="card-body">
           <h3 class="card-title pricing-card-title">Kemahasiswaan</h3>
           <p>Menyediakan informasi mengenai kegiatan dan artikel kemahasiswaan</p>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
+          <a href="arum/home" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
         </div>
       </div>
 
