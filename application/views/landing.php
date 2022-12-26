@@ -19,8 +19,8 @@
   <body>
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <a class="my-0 mr-md-auto font-weight-normal" href="/">
-        <img class="navbar-brand-dark common" src="/assets/img/logo.png" height="30" alt="Logo light">
+    <a class="my-0 mr-md-auto font-weight-normal" href="index.php">
+        <img class="navbar-brand-dark common" src="assets/img/logo.png" height="30" alt="Logo light">
       </a>
       <!-- <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Features</a>
@@ -29,10 +29,13 @@
         <a class="p-2 text-dark" href="#">Pricing</a>
       </nav> -->
       <?php if(isset($_SESSION["username"])){?>
-        <a class="btn btn-danger mr-2" href="/Login/Logout">Logout</a>
+       <a>Halo, <?php echo ucfirst($this->session->userdata('username')); ?></a>
+   
+      
+        <a class="btn btn-danger ml-2 mr-2" href="Login/Logout">Logout</a>
         <!-- <a class="btn btn-primary" href="/Login">Dashboard</a> -->
       <?php } else {?>
-        <a class="btn btn-primary" href="/Login">Login</a>
+        <a class="btn btn-primary" href="Login">Login</a>
       <?php } ?>
     </div>
 
@@ -51,7 +54,7 @@
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Pengabdian </h3>
             <p>Menyediakan informasi mengenai Pengabdian yang dilakukan Depilkom</p>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
+            <a href="ade_controllers/beranda/index" type="button" class="btn btn-lg btn-block btn-primary">Liat</a>
           </div>
         </div>
 
@@ -73,7 +76,7 @@
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Kemahasiswaan</h3>
             <p>Menyediakan informasi mengenai kegiatan dan artikel kemahasiswaan</p>
-            <a href="arum/home/index" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
           </div>
         </div>
 
