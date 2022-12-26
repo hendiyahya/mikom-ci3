@@ -51,7 +51,7 @@
         <?php if (isset($_SESSION["username"])) { ?>
             <a>Halo, <?php echo ucfirst($this->session->userdata('username')); ?></a>
             <a class="btn btn-success mx-4" href="<?= base_url(); ?>makhi/dashboard">Dashboard</a>
-            <a class="btn btn-danger " href="<?= base_url(); ?>makhi/auth">Logout</a>
+            <a class="btn btn-danger " href="<?= base_url(); ?>login/logout">Logout</a>
         <?php } ?>
 
 
