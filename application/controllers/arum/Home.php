@@ -7,6 +7,7 @@ class Home extends CI_Controller {
         // $this->load->model("hendi_post");
         // $this->hendi_login->cek_login(); 
         $this->load->model("arum/arum_home"); // panggil model arum
+        
     }  
 
     // manggil home
@@ -24,7 +25,8 @@ class Home extends CI_Controller {
 
     //manggil dashboard
     public function dashboard() { 
-        $data["posts"] = $this->arum_home->ambilsemuadata()->result_array();// manggil model untuk ngambil data
+        $data["posts"] = $this->arum_home->ambildatauser();// manggil model untuk ngambil data
+       
         $this->load->view("Arum/ADashboard",$data);
     }
 

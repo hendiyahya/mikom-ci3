@@ -23,11 +23,36 @@ class post extends CI_Controller {
         $data=[
             'nama' => $this->input->post('nama'),
             'gambar' => null,
-            'ket' => $this->input->post('ket')
+            'ket' => $this->input->post('ket'),
+            'user_id' => $this->session->userdata('id')
         ];
 
         // panggil dan pake model buat insert ke database
         $this->arum_home->insertdata($data);
+        redirect("arum/Home/dashboard");// udh nambahin data pindah ke dasboard
+
+    }
+
+    public function updatedata($id) {  
+        //Panggil satu data
+        $data = $this->arum_home->ambilsatudata($id);//ambil data di table semuai id
+
+        //masukin variable
+        $post=[
+            'nama' => $this->input->post('nama'),
+            'gambar' => null,
+            'ket' => $this->input->post('ket')
+            
+        ];
+
+        $data['nama'] = $post['nama'];
+        $data['gambar'] = $post['gambar'];
+        $data['ket'] = $post['ket'];
+
+
+
+        // panggil dan pake model buat insert ke database
+        $this->db->update('nenden_artikel', $data, ['id' => $id]);
         redirect("arum/Home/dashboard");// udh nambahin data pindah ke dasboard
 
     }
@@ -42,16 +67,14 @@ class post extends CI_Controller {
     }
 
     public function edit($id) {  // untuk edit data
-       
         $data["post"] = $this->arum_home->ambilsatudata($id);//ambil data di table semuai id
-        
-        
-
         $this->load->view("Arum/edit",$data); 
 
 
         
     }
+
+
 
     public function detail($id) {  // untuk detail artikel
        

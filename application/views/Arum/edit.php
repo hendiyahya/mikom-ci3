@@ -48,7 +48,7 @@
 					
 					<!-- button logout -->
 					<li class="nav-item">
-						<a class="nav-link" href="logout.php"><svg width="25px" viewBox="0 0 16 16" class="bi bi-person-x-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<a class="nav-link" href="<?= base_url(); ?>/Login/Logout"><svg width="25px" viewBox="0 0 16 16" class="bi bi-person-x-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z"/>
 						</svg> LogOut</a>
 					</li>
@@ -67,7 +67,7 @@
         <a href="<?= base_url(); ?>arum/home/dashboard"><button class="button button1">Back</button></a>
         <br>
         <br>
-        <h1 class="mb-3 text-center" style="color: white;">Halaman Pembuatan Post</h1>
+        <h1 class="mb-3 text-center" style="color: white;">Halaman Edit Post</h1>
 
         <div class="container col-md-6 mt-4">
 		
@@ -76,8 +76,8 @@
 				Tambah 
 			</div> -->
 			<div class="card-body">
-				<form action="<?= base_url(); ?>arum/post/tambahdata" method="post" role="form">
-
+				<form action="<?= base_url();?>arum/post/updatedata/<?= $post['id'] ?>" method="post" role="form">
+                    <input type="hidden" name="id" value="<?php echo $post["id"];?>"></input>
 					<div class="form-group">
 						<label>Judul</label>
 						<input type="text" name="nama" required="" class="form-control" value="<?php echo $post["nama"];?>">
@@ -96,7 +96,7 @@
 						<textarea class="form-control" name="ket" ><?php echo $post["ket"];?></textarea>
 					</div>
 
-					<button type="submit" class="btn btn-primary" name="submit" value="simpan">Simpan data</button>
+					<button type="submit" class="btn btn-primary" name="submit" value="simpan">Update data</button>
 				</form>
 
 				
