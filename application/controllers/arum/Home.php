@@ -10,7 +10,14 @@ class Home extends CI_Controller {
     }  
 
     // manggil home
-    public function index() {  
+    public function index() {
+        
+        if(!isset($_SESSION["username"])){
+            //alihkan ke halaman login
+			redirect(site_url('login'));
+        }
+
+        
         $data["posts"] = $this->arum_home->ambilsemuadata()->result_array();// manggil model untuk ngambil data
         $this->load->view("Arum/AKemahasiswaan",$data); 
     }

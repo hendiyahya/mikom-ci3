@@ -73,7 +73,7 @@
           <div class="card-body">
             <h3 class="card-title pricing-card-title">Kemahasiswaan</h3>
             <p>Menyediakan informasi mengenai kegiatan dan artikel kemahasiswaan</p>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
+            <a href="arum/home/index" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
           </div>
         </div>
 
