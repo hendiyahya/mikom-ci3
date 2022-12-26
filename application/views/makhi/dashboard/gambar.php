@@ -1,4 +1,4 @@
-<div class="container mt-4" style="margin-left: 250px;">
+<div class="container mt-4" style="margin-left: 25  0px;">
     <div class="row">
         <div class="col-md-6">
 
