@@ -19,11 +19,19 @@ class arum_home extends CI_Model{
         $this->db->where('id', $id);
         $this->db->delete('nenden_artikel');
         
+		
 	}
 
     function ambilsatudata($id)
 	{
        return $this->db->get_where('nenden_artikel', array('id' => $id))->row_array();           
+        
+	}
+
+	function ambildatauser()
+	{
+		$id = $this->session->userdata('id');
+       return $this->db->get_where('nenden_artikel',['user_id' => $id])->result_array();           
         
 	}
 
