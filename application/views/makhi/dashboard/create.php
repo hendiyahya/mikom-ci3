@@ -19,9 +19,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="photo">Add Photo</label>
-                        <input type="file" class="form-control" id="photo" name="gambar">
+                        <label for="photo">Add Photo</label> <br>
 
+                        <input type="file" class="form-control" id="preview_gambar" name="gambar">
+                    </div>
+
+                    <div class="form-group">
+                        <img src="" alt="" width="400px" id="gambar_load">
                     </div>
 
                     <a class="btn btn-success" href="<?= base_url(); ?>makhi/dashboard"><i class="bi bi-arrow-left"></i>Back</a>

@@ -27,6 +27,8 @@ class Home extends CI_Controller
         $data['judul'] = 'Post';
         $data['post'] = $this->Post_model->getDetail($id);
 
+        $data['posts'] = $this->Post_model->getAllPost();
+
         $this->load->view('makhi/templates/header', $data);
         $this->load->view('makhi/post', $data);
         $this->load->view('makhi/templates/footer');
