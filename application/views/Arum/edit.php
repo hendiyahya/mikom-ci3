@@ -43,7 +43,12 @@
                             <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
                             <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                             <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-                          </svg> </a>
+                          </svg> 
+                          <?php if(isset($_SESSION["username"])){?>
+                         <span><?php echo ucfirst($this->session->userdata('username')); ?></span>
+                        <?php } ?>
+
+                        </a>
 						</li>
 					
 					<!-- button logout -->
@@ -67,7 +72,7 @@
         <a href="<?= base_url(); ?>arum/home/dashboard"><button class="button button1">Back</button></a>
         <br>
         <br>
-        <h1 class="mb-3 text-center" style="color: white;">Halaman Edit Post</h1>
+        <h1 class="mb-3 text-center" style="color: white;"><b>Halaman Edit Post</b></h1>
 
         <div class="container col-md-6 mt-4">
 		
