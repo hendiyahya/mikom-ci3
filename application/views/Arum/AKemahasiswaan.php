@@ -72,7 +72,7 @@
         <a href="<?= base_url(); ?>arum/home/dashboard"><button class="button button1">Dashboard</button></a>
         <br>
         <br>
-        <h1 class="mb-3 text-center" style="color: white;">Artikel Kemahasiswaan KEMAKOM</h1>
+        <h1 class="mb-3 text-center" style="color: white;"><b> Artikel Kemahasiswaan KEMAKOM</b></h1>
         
         <br>
         <br>
@@ -83,7 +83,7 @@
                     <span class="shop-item-title"><?php echo $row["nama"];?></span>
                     <img class="shop-item-image" src="<?= base_url(); ?>assets/arum/img/<?php echo $row["gambar"];?>">
                     <div class="shop-item-details">
-                        <span class="shop-item-price"><?php echo substr($row["ket"],0,20);?>..</span>
+                        <span class="shop-item-price"><?php echo substr($row["ket"],0,25);?>..</span>
                         <!-- <button class="btn btn-primary shop-item-button" type="button">See more..</button> -->
                         <!-- <a class="btn btn-primary shop-item-button" href="">See more</a> -->
                         <a href="<?= base_url(); ?>arum/post/detail/<?php echo $row["id"];?>" class="btn btn-primary shop-item-button">See more</a>
