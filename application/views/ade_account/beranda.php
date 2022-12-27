@@ -78,15 +78,13 @@
     <div class="container">
 
       <div class="row">
-      <!-- <?php foreach ($images as $img) : ?>
-                <img src="<?= base_url() . 'assets/ade/img/' . $img['image'] ?>" alt="gambar">
-       <?php endforeach?>       -->
+      
         <?php foreach ($queryAllNgabdi as $post) : ?>
         <div class="col-md-4">
          
           <div class="card mb-4 shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="<?php echo base_url(); ?>assets/ade/img/filename.jpg"> </img>
-
+            <img class="bd-placeholder-img card-img-top" width="400" height="220" src="<?= base_url(); ?>assets/ade/img/<?php echo $post->Foto?>"> </img>
+          
             <div class="card-body">
               <p class="card-text"><?php echo $post->Judul ?></p>
               <div class="d-flex justify-content-between align-items-center">
