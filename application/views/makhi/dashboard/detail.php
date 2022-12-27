@@ -4,7 +4,12 @@
         <div class="col-lg-8">
             <h3><?= $post['title'] ?></h3>
             <p><?= $post['datecreated'] ?></p>
-            <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="" height="300px">
+            <?php if ($post['pic'] == NULL) : ?>
+                <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="" height="300px">
+            <?php else : ?>
+                <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $post['pic'] ?>" alt="" height="300px">
+            <?php endif; ?>
+
             <div class="col-md-5 mb-4 mt-3">
                 <a href="<?= base_url(); ?>makhi/dashboard" class="btn btn-success">back</a>
 

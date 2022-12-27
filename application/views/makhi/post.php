@@ -6,7 +6,12 @@
                 <h2><?= $post['title'] ?></h2>
             </div>
             <div class="image text-center">
-                <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="gambar" class="w-50">
+                <?php if ($post['pic'] == NULL) : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="gambar" class="w-50">
+                <?php else : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $post['pic'] ?>" alt="gambar" class="w-50">
+                <?php endif; ?>
+
             </div>
             <div class="content mt-4">
                 <p><?= $post['datecreated'] ?></p>

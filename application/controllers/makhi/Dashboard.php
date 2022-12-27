@@ -41,11 +41,29 @@ class Dashboard extends CI_Controller
             $this->load->view('makhi/dashboard/create');
             $this->load->view('makhi/dashboard/layouts/footer');
         } else {
+            $config = [
+                'file_name' => time(), //ganti nama file jadi time
+                'overwrite' => TRUE, //ubah nama file
+                'max_width' => '1200', //maks panjang gambar (px)
+                'max_height' => '900', //maks tinggi gambar (px)
+                'max_size' => '2400000', //maks ukuran gambar (byte)
+                'allowed_types' => 'gif|png|jpg|jpeg', //type yang boleh diinput
+                'upload_path' => 'assets/makhi/img/upload' //tempat gambar akan disimpan
+            ];
+
+            $this->upload->initialize($config);
+
+            if (!$this->upload->do_upload('gambar')) { //error
+                echo $this->upload->display_errors();
+            } else {
+                $image = $this->upload->data();
+                $gambar = $image['file_name'];
+            }
 
             $post = [
                 'title' => $this->input->post('title', true),
                 'body' => $this->input->post('body', true),
-                // 'pic' => $foto,
+                'pic' => $gambar,
                 'excerpt' => strip_tags(substr($this->input->post('body', true), 0, 100)),
                 'excerpt_awal' => strip_tags(substr($this->input->post('body', true), 0, 50)),
                 'user_id' => $data['username']['id_user'],
@@ -53,6 +71,7 @@ class Dashboard extends CI_Controller
                 'datecreated' => date("Y/m/d", time())
 
             ];
+
 
 
 

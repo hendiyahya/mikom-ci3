@@ -71,7 +71,11 @@
             <div class="card mb-4" style="width: 1300px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="..." height="100%" width="380px">
+                        <?php if ($post['pic'] == NULL) : ?>
+                            <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="..." height="100%" width="380px">
+                        <?php else : ?>
+                            <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $post['pic'] ?>" alt="..." height="100%" width="380px">
+                        <?php endif; ?>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">

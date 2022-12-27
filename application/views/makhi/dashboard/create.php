@@ -20,7 +20,7 @@
 
                     <div class="form-group">
                         <label for="photo">Add Photo</label>
-                        <input type="file" class="form-control" id="photo" name="foto" size="20">
+                        <input type="file" class="form-control" id="photo" name="gambar">
 
                     </div>
 
