@@ -82,7 +82,9 @@
       
     </div>
     <div class="col-md-12 order-md-1">
-      <?php echo form_open_multipart('index.php/ade_controllers/tambah_post/fungsiTambah');?>
+      
+      <!-- <?php echo form_open_multipart('ade_controllers/tambah_post/fungsiTambah');?> -->
+      <form action="<?= base_url(); ?>ade_controllers/tambah_post/fungsiTambah" method="post" enctype="multipart/form-data">
       <!-- <form action="<?php echo base_url('index.php/ade_controllers/tambah_post/fungsiTambah') ?>" method="post" class="needs-validation" novalidate> -->
         <div class="row">
           <div class="col-md-12 mb-3">
@@ -97,14 +99,16 @@
         </div>
 
         <div>
-          <label>Caption</label>
-          <input id="Caption" type="hidden" name="Caption">
+          <label><b>Caption</b></label>
+          <input id="Caption" type="hidden" name="Caption" required>
           <trix-editor input="Caption"></trix-editor>
         </div>
-        <!-- <div class="mb-3">
-          <label for="Foto"><b>Foto</b></label>
-          <input type="file" class="form-control" name="Foto" size="1000"  required>
-        </div> -->
+        <div class="mb-3">   
+          <label for="foto"><b>Foto</b> </label>
+           <input type="file" class="form-control" id="preview_gambar" name="gambar" size="20" required>
+        </div>
+
+
         <!-- <div class="mb-3">
           <label for="Caption">Caption</label>
           <input type="text" class="form-control" name="Caption" placeholder="Masukkan Caption">

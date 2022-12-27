@@ -78,17 +78,20 @@
     <div class="container">
 
       <div class="row">
+      <!-- <?php foreach ($images as $img) : ?>
+                <img src="<?= base_url() . 'assets/ade/img/' . $img['image'] ?>" alt="gambar">
+       <?php endforeach?>       -->
         <?php foreach ($queryAllNgabdi as $post) : ?>
         <div class="col-md-4">
          
           <div class="card mb-4 shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="<?= base_url(); ?>assets/img/Penyuluhan.jpg"  src role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></img>
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="<?php echo base_url(); ?>assets/ade/img/filename.jpg"> </img>
 
             <div class="card-body">
               <p class="card-text"><?php echo $post->Judul ?></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="<?php echo base_url(); ?>ade_controllers/edit_post/detail_post/<?php echo $post->ID ?>"><button>view</button></a>
+                  <a href="<?php echo base_url(); ?>ade_controllers/edit_post/detail_post/<?php echo $post->ID ?>"><button class="btn btn-info">view</button></a>
                   <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
                   <!-- <a href="<?php echo base_url('index.php/ade_controllers/edit_post/halaman_edit') ?>/<?php echo $post->ID ?>"><button >Edit</button></a>  -->
                 </div>
