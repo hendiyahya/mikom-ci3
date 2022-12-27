@@ -37,11 +37,13 @@ class Post_model extends CI_Model
         $data['excerpt'] = $post['excerpt'];
         $data['excerpt_awal'] = $post['excerpt_awal'];
 
+
         $this->db->update('makhi_posts', $data, ['id' => $id]);
     }
 
     public function getAllPost()
     {
+        $this->db->order_by('id', 'DESC');
         return $this->db->get('makhi_posts')->result_array();
     }
 }

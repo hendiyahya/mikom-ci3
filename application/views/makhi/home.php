@@ -7,8 +7,13 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <a href="<?= base_url() ?>makhi/home/detail/<?= $posts[0]['id'] ?>">
-                <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="600">
-                <div class="carousel-caption d-md-block m-auto" style="width: 30%;">
+                <?php if ($posts[0]['pic'] == NULL) : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="600">
+                <?php else : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[0]['pic'] ?>" class="d-block mx-auto" alt="..." width="600">
+                <?php endif; ?>
+
+                <div class="carousel-caption d-md-block m-auto bg-light shadow" style="width: 30%;">
                     <h5 class="text-dark"><?= $posts[0]['title'] ?></h5>
                     <!-- <p>Some representative placeholder content for the first slide.</p> -->
                 </div>
@@ -16,17 +21,25 @@
         </div>
         <div class="carousel-item">
             <a href="<?= base_url() ?>makhi/home/detail/<?= $posts[1]['id'] ?>">
-                <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg"" class=" d-block mx-auto" alt="..." width="600">
-                <div class="carousel-caption d-none d-md-block">
+                <?php if ($posts[1]['pic'] == NULL) : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="600">
+                <?php else : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[1]['pic'] ?>" class="d-block mx-auto" alt="..." width="600">
+                <?php endif; ?>
+                <div class="carousel-caption d-none d-md-block bg-light shadow">
                     <h5 class="text-dark"><?= $posts[1]['title'] ?></h5>
                     <!-- <p>Some representative placeholder content for the second slide.</p> -->
                 </div>
             </a>
         </div>
         <div class="carousel-item">
-            <a href="<?= base_url() ?>makhi/home/detail/<?= $posts[0]['id'] ?>">
-                <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg"" class=" d-block mx-auto" alt="..." width="600">
-                <div class="carousel-caption d-none d-md-block m-auto" style="width: 30%;">
+            <a href="<?= base_url() ?>makhi/home/detail/<?= $posts[2]['id'] ?>">
+                <?php if ($posts[2]['pic'] == NULL) : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="600">
+                <?php else : ?>
+                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[2]['pic'] ?>" class="d-block mx-auto" alt="..." width="600">
+                <?php endif; ?>
+                <div class="carousel-caption d-none d-md-block m-auto bg-light shadow" style="width: 30%;">
                     <h5 class="text-dark"><?= $posts[2]['title'] ?></h5>
                     <!-- <p>Some representative placeholder content for the third slide.</p> -->
                 </div>
@@ -51,7 +64,12 @@
             if ($index <= 5) : ?>
                 <div class="col-4 mb-3 mt-4">
                     <div class="card" style="height: 32rem">
-                        <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="card-img-top" alt="...">
+                        <?php if ($post['pic'] == NULL) : ?>
+                            <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="card-img-top" alt="...">
+                        <?php else : ?>
+                            <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $post['pic'] ?>" class="card-img-top" alt="..." height="200px">
+                        <?php endif; ?>
+
                         <div class="card-body">
                             <h5 class="card-title"><?= $post['title'] ?></h5>
                             <p class="card-text"><?= $post['datecreated'] ?></p>
@@ -74,7 +92,7 @@
                         <?php if ($post['pic'] == NULL) : ?>
                             <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="..." height="100%" width="380px">
                         <?php else : ?>
-                            <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $post['pic'] ?>" alt="..." height="100%" width="380px">
+                            <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $post['pic'] ?>" alt="..." height="220px" width="380px">
                         <?php endif; ?>
                     </div>
                     <div class="col-md-8">
