@@ -66,27 +66,28 @@
     </div>
 
     <div class="row">
-        <div class="col-md-6">
 
-            <?php foreach ($posts as $post) : ?>
-                <div class="card mb-4">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
+        <?php foreach ($posts as $post) : ?>
+            <div class="card mb-4" style="width: 1300px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <?php if ($post['pic'] == NULL) : ?>
                             <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="..." height="100%" width="380px">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $post['title'] ?></h5>
-                                <p class="card-text"> <?= $post['excerpt'] ?></p>
-                                <!-- <p class="card-text"> <?= substr($post['body'], 0, 100) ?></p> -->
-                                <p class="card-text"><small class="text-muted"><?= $post['datecreated'] ?></small></p>
-                                <a href="<?= base_url() ?>makhi/home/detail/<?= $post['id'] ?>" class="btn btn-primary">See more</a>
-                            </div>
+                        <?php else : ?>
+                            <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $post['pic'] ?>" alt="..." height="100%" width="380px">
+                        <?php endif; ?>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $post['title'] ?></h5>
+                            <p class="card-text"> <?= $post['excerpt'] ?></p>
+                            <p class="card-text"><small class="text-muted"><?= $post['datecreated'] ?></small></p>
+                            <a href="<?= base_url() ?>makhi/home/detail/<?= $post['id'] ?>" class="btn btn-primary">See more</a>
                         </div>
                     </div>
                 </div>
-            <?php endforeach; ?>
-        </div>
+            </div>
+        <?php endforeach; ?>
 
     </div>
 </div>

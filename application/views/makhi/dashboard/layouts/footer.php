@@ -8,6 +8,22 @@
 <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 <script src="dashboard.js"></script>
+
+<script>
+    function bacaGambar(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#gambar_load').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $('#preview_gambar').change(function() {
+        bacaGambar(this);
+    });
+</script>
 </body>
 
 </html>
