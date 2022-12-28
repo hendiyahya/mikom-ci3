@@ -78,7 +78,7 @@
 
 			<?php echo form_close();?>
 
-			<p class="text-center my-3">Sudah Memiliki Akun ? <a href="/login">Login</a></p>
+			<p class="text-center my-3">Sudah Memiliki Akun ? <a href="<?php echo base_url('Login')?>">Login</a></p>
 
 			<!-- <p>Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini..'); ?></p> -->
 		</div>

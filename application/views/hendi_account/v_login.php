@@ -59,7 +59,7 @@
 
 			<?php echo form_close();?>
 
-			<p class="text-center my-3">Belum Memiliki Akun ? <a href="/register">Daftar Sekarang</a></p>
+			<p class="text-center my-3">Belum Memiliki Akun ? <a href="Register">Daftar Sekarang</a></p>
 
 			<!-- <p>Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini..'); ?></p> -->
 		</div>
