@@ -16,6 +16,7 @@ class Home extends CI_Controller
         }
         $data['judul'] = 'Home';
         $data['posts'] = $this->Post_model->getAllPost();
+        $data['random'] = $this->Post_model->getAllPostRandom();
 
         $this->load->view('makhi/templates/header', $data);
         $this->load->view('makhi/home', $data);
@@ -28,6 +29,7 @@ class Home extends CI_Controller
         $data['post'] = $this->Post_model->getDetail($id);
 
         $data['posts'] = $this->Post_model->getAllPost();
+        $data['random'] = $this->Post_model->getAllPostRandom();
 
         $this->load->view('makhi/templates/header', $data);
         $this->load->view('makhi/post', $data);
