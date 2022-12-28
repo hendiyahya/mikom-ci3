@@ -306,6 +306,8 @@
 
   .img-post
   {
-    height: 50px;
-    width: auto;
+    /* height: 100px; */
+    /* width: auto; */
+    display: block; 
+    max-width: 500px; 
   }

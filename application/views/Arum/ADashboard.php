@@ -105,6 +105,7 @@
                         <td><?php echo $row["ket"];?></td>
                         <td>
                             <a href="<?= base_url(); ?>arum/post/edit/<?php echo $row["id"];?>" class="btn btn-warning">Edit</a>
+                            
                             <a href="<?= base_url(); ?>arum/post/hapus/<?php echo $row["id"];?>" class="btn btn-danger">Hapus</a>
 
                         </td>
