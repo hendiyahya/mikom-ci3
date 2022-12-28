@@ -76,10 +76,10 @@
         <br>
         <br>
 
-        <div class="justify-content-center">
+        <div class="justify-content-center" style="margin: 5px;">
 
                 <div class="row">
-                    <img class="shop-item-image img-post" src="<?= base_url(); ?>assets/arum/img/<?php echo $post["gambar"];?>">
+                    <img class="shop-item-image " style="" src="<?= base_url(); ?>assets/arum/img/<?php echo $post["gambar"];?>">
                 </div>
                 <br>
                 <br>

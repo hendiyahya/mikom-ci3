@@ -74,7 +74,7 @@
         <br>
         <h1 class="mb-3 text-center" style="color: white;"><b>Halaman Edit Post</b></h1>
 
-        <div class="container col-md-6 mt-4">
+        <div class="container col-md-12 mt-4">
 		
 		<div class="card">
 			<!-- <div class="card-header bg-success text-white">
@@ -84,21 +84,21 @@
 				<form action="<?= base_url();?>arum/post/updatedata/<?= $post['id'] ?>" method="post" role="form">
                     <input type="hidden" name="id" value="<?php echo $post["id"];?>"></input>
 					<div class="form-group">
-						<label>Judul</label>
+						<label><b>Judul</b></label>
 						<input type="text" name="nama" required="" class="form-control" value="<?php echo $post["nama"];?>">
 
 					</div>
 
                     <div class="form-group">
-						<label>Gambar</label>
+						<label><b>Gambar</b></label>
 						<input type="file" name="gambar" required="" class="form-control" value="<?php echo $post["nama"];?>">
 
 					</div>
 					
 
 					<div class="form-group">
-						<label>Keterangan</label>
-						<textarea class="form-control" name="ket" ><?php echo $post["ket"];?></textarea>
+						<label><b>Keterangan</b></label>
+						<textarea class="form-control" name="ket" style=""><?php echo $post["ket"];?></textarea>
 					</div>
 
 					<button type="submit" class="btn btn-primary" name="submit" value="simpan">Update data</button>

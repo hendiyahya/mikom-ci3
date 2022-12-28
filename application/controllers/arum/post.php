@@ -40,7 +40,7 @@ class post extends CI_Controller {
         //masukin variable
         $post=[
             'nama' => $this->input->post('nama'),
-            'gambar' => null,
+            'gambar' => $this->input->post('gambar'),
             'ket' => $this->input->post('ket')
             
         ];
