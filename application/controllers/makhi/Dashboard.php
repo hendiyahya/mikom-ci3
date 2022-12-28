@@ -128,6 +128,8 @@ class Dashboard extends CI_Controller
                 $image = $this->upload->data();
                 $gambar = $image['file_name'];
             }
+            // var_dump($gambar);
+            // die;
             $this->Post_model->editPost($id, $gambar);
             redirect('makhi/dashboard');
         }

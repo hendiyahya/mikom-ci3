@@ -53,8 +53,10 @@
 					<h1 class="mt-5" style="text-align:center;"><?php echo $queryNgabdiDetail->Judul?></h1>
 					<p style="text-align:center;"><?php echo $queryNgabdiDetail->Waktu?></p>
 				</div>
+				
 				<div>
-					<img class="d-block mx-auto mb-4" src="<?= base_url(); ?>assets/img/.."  src="<?= base_url(); ?>a" width="800" height="400">
+					 <!-- <img class="bd-placeholder-img card-img-top" width="400" height="220" src="<?= base_url(); ?>assets/ade/img/<?php echo $post->Foto?>"> </img> -->
+					<img class="d-block mx-auto mb-4"  width="800" height="400" src="<?= base_url(); ?>assets/ade/img/<?php echo $queryNgabdiDetail->Foto?>"?>
 				</div>
 				<div>
 					<p><?php echo $queryNgabdiDetail->Caption?></p>

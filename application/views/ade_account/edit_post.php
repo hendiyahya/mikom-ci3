@@ -81,7 +81,9 @@
       
     </div>
     <div class="col-md-12 order-md-1">
-      <form action="<?php echo base_url('index.php/ade_controllers/edit_post/fungsiEdit') ?>" method="post" class="needs-validation" novalidate>
+    <form action="<?= base_url(); ?>ade_controllers/edit_post/fungsiEdit" method="post" enctype="multipart/form-data">
+
+      <!-- <form action="<?php echo base_url('ade_controllers/edit_post/fungsiEdit') ?>" method="post" class="needs-validation" novalidate> -->
 
       	<input type="hidden" name="ID" value="<?php echo $queryNgabdiDetail->ID ?>">
         <div class="row">
@@ -101,9 +103,9 @@
           <input id="Caption" type="hidden" name="Caption" value="<?php echo $queryNgabdiDetail->Caption ?>">
           <trix-editor input="Caption"></trix-editor>
         </div> 
-        <!-- <div class="mb-3">
-          <label for="Caption">Caption</label>
-          <input type="text" class="form-control" name="Caption" placeholder="Masukkan Caption">
+        <!-- <div class="form-group">   
+          <label for="foto"><b>Foto</></label>
+           <input type="file" class="form-control" id="preview_gambar" name="gambar" size="20">
         </div> -->
 
         <button class="btn mt-5 btn-primary btn-lg btn-block" type="submit">Update Berita Artikel</button>
