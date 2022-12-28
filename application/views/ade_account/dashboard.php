@@ -18,9 +18,9 @@
     <!-- Custom styles for this template -->
 <!-- <link href="<?= base_url(); ?>assets/css/offcanvas.css" rel="stylesheet"> -->
   </head>
-  <body class="bg-light">
+  <body style="background-color:light">
   	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style="background-color:#E0FFFF">
-      <a class="my-0 mr-md-auto font-weight-normal" href="../../">
+      <a class="my-0 mr-md-auto font-weight-normal" href="/">
         <img class="navbar-brand-dark common" src="<?= base_url(); ?>assets/img/logo.png"  height="30" alt="Logo light">
       </a>
       <a><?php echo ucfirst($this->session->userdata('username')); ?>'s Post</a>
@@ -47,15 +47,16 @@
 <main role="main" class="container">
 
   <div class="d-flex align-items-center p-8 my-3 bg-purple rounded shadow-sm">
-    <h1> Data Pengabdian Mahasiswa Pada Masyarakat</h1>
+    <h1> Data Pengabdian Mahasiswa Pada Masyarakat</h1>    
   </div>
-
-  <div class="my-3 bg-white rounded shadow-sm" >
-		<div class="mb-4">
-			<a href="<?php echo base_url('ade_controllers/tambah_post/halaman_tambah') ?>"><button class="btn btn-success"><b class="fa">Tambah Berita Pengabdian</b></button></a>
+  <div class="mb-4">
+			<a href="<?php echo base_url('ade_controllers/tambah_post/halaman_tambah') ?>"><button class="btn btn-success" ><b class="fa">Tambah Berita Pengabdian</b></button></a>
 		</div>
 
-    <table class="table" >
+  <div class="my-3 bg-white rounded shadow-sm" >
+		
+
+    <table class="table" style="background-color:#E0FFFF" >
   <thead class="thead-dark" style="border-style: solid; border-color: black">
     <tr>
       <th scope="col">No</th>
