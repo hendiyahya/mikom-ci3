@@ -30,10 +30,10 @@
         <a class="p-2 text-dark" href="#">Pricing</a>
       </nav> -->
     <?php if (isset($_SESSION["username"])) { ?>
-      <a class="btn btn-danger mr-2" href="/Login/Logout">Logout</a>
+      <a class="btn btn-danger mr-2" href="<?php echo base_url('/Login/logout')?>">Logout</a>
       <!-- <a class="btn btn-primary" href="/Login">Dashboard</a> -->
     <?php } else { ?>
-      <a class="btn btn-primary" href="/Login">Login</a>
+      <a class="btn btn-primary" href="Login">Login</a>
     <?php } ?>
   </div>
 
@@ -58,12 +58,12 @@
 
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h5 class="my-0 font-weight-normal">M. Ramadan Alghifary</h5>
+          <h5 class="my-0 font-weight-normal">M. Ramadhan Alghifary</h5>
         </div>
         <div class="card-body">
           <h3 class="card-title pricing-card-title">Penelitian</h3>
           <p>Menyediakan informasi mengenai topik penelitian dari berbagai KBK</p>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Lihat</button>
+          <a href="alghi/Home" type="button" class="btn btn-lg btn-block btn-primary">Lihat</a>
         </div>
       </div>
 
