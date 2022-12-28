@@ -46,4 +46,10 @@ class Post_model extends CI_Model
         $this->db->order_by('id', 'DESC');
         return $this->db->get('makhi_posts')->result_array();
     }
+
+    public function getAllPostRandom()
+    {
+        $this->db->order_by('id', 'RANDOM');
+        return $this->db->get('makhi_posts')->result_array();
+    }
 }
