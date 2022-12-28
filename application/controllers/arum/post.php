@@ -7,6 +7,7 @@ class post extends CI_Controller {
         // $this->load->model("hendi_post");
         // $this->hendi_login->cek_login(); 
         $this->load->model("arum/arum_home"); // panggil model arum
+        $this->load->library("upload");
     }  
 
     //Load Halaman dashboard
@@ -19,10 +20,30 @@ class post extends CI_Controller {
 
     public function tambahdata() {  
 
+         
+        $config = [
+            'file_name' => time(), //ganti nama file jadi time
+            'overwrite' => TRUE, //ubah nama file
+            'max_width' => '1200', //maks panjang gambar (px)
+            'max_height' => '900', //maks tinggi gambar (px)
+            'max_size' => '2400000', //maks ukuran gambar (byte)
+            'allowed_types' => 'gif|png|jpg|jpeg', //type yang boleh diinput
+            'upload_path' => 'assets/arum/img' //tempat gambar akan disimpan
+        ];
+
+        $this->upload->initialize($config);
+
+        if (!$this->upload->do_upload('gambar')) { //kalo error
+            // echo $this->upload->display_errors();
+        } else {
+            $image = $this->upload->data();
+            $gambar = $image['file_name'];
+        }
+
         //masukin variable
         $data=[
             'nama' => $this->input->post('nama'),
-            'gambar' => null,
+            'gambar' => $gambar,
             'ket' => $this->input->post('ket'),
             'user_id' => $this->session->userdata('id')
         ];
