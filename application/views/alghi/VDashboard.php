@@ -3,7 +3,7 @@
   <?php $this->load->view("alghi/partials/head.php") ?>
 </head>
 <body>
-<div class="container-lg">
+<div class="container-lg mt-4">
     <div class="table-responsive">
         <div class="table-wrapper">
             <div class="table-title">

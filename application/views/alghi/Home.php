@@ -23,11 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <body>
 
-    <div class="container">
+    <div class="container pt-2">
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
-            <a class="text-muted" href="<?php echo base_url('Landing')?>">MIKOM</a>
+            <a class="my-0 mr-auto font-weight-normal col-9" href="/">
+        <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png')?>" height="30" alt="Logo light">
+      </a>
+            <!-- <a class="text-muted" href="<?php echo base_url('Landing')?>">MIKOM</a> -->
           </div>
           <div class="col-4 text-center">
             <a class="blog-header-logo text-dark">Penelitian</a>
