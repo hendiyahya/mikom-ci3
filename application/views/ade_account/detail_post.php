@@ -27,7 +27,7 @@
 	</style> -->
 </head>
 <body>
-   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style="background-color:aqua">
+   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style="background-color:#E0FFFF">
       <a class="my-0 mr-md-auto font-weight-normal" href="../../../../index.php">
         <img class="navbar-brand-dark common" src="<?= base_url(); ?>assets/img/logo.png"  height="30" alt="Logo light">
       </a>
