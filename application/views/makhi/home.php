@@ -60,7 +60,7 @@
 
     <div class="row">
         <?php $index = 3;
-        foreach ($posts as $post) :
+        foreach ($random as $post) :
             if ($index <= 5) : ?>
                 <div class="col-4 mb-3 mt-4">
                     <div class="card" style="height: 32rem">

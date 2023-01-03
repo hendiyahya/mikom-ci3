@@ -15,6 +15,7 @@
                     <div class="form-group">
                         <label for="body">Body</label>
                         <input id="x" type="hidden" name="body" value="<?= $post['body']; ?>">
+
                         <trix-editor input="x"></trix-editor>
                         <?= form_error('body', '<small class="text-danger text-left">', '</small>'); ?>
                     </div>

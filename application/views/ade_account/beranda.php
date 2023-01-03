@@ -41,7 +41,7 @@
   <body>
     
 <header>
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style="background-color:#E0FFFF">
       <a class="my-0 mr-md-auto font-weight-normal" href="/">
         <img class="navbar-brand-dark common" src="<?= base_url(); ?>assets/img/logo.png"  height="30" alt="Logo light">
       </a>
@@ -68,6 +68,8 @@
 </header>
 
 <main role="main">
+
+      
 
     <div class="container">
       <h2 style="text-align: center; margin-top: 50px;">Pengabdian Mahasiswa Pada Masyarakat </h2>

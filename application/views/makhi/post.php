@@ -20,9 +20,9 @@
         </div>
 
         <div class="col p-0" style="margin-top: 100px; margin-left: 50px;">
-            <h3 class="text-monospace">Artikel terbaru</h3>
+            <h3 class="text-monospace">Artikel lainnya</h3>
             <?php $i = 0;
-            foreach ($posts as $a) :
+            foreach ($random as $a) :
                 if ($i < 4) : ?>
                     <a href="<?= base_url() ?>makhi/home/detail/<?= $a['id'] ?>">
                         <div class="card mb-3" style="width: fit; height: 80px;">

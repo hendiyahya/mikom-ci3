@@ -23,6 +23,7 @@
     <a class="my-0 mr-md-auto font-weight-normal" href="/">
       <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png')?>" height="30" alt="Logo light">
     </a>
+    <a class="mr-2">Selamat Datang! <?php echo ucfirst($this->session->userdata('username')); ?></a>
     <!-- <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="#">Features</a>
         <a class="p-2 text-dark" href="#">Enterprise</a>
