@@ -28,12 +28,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
             <a class="my-0 mr-auto font-weight-normal col-9" href="/">
-        <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png')?>" height="30" alt="Logo light">
+        <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png')?>" height="30" alt="Logo light" href="<?php echo base_url('Landing')?>">
       </a>
             <!-- <a class="text-muted" href="<?php echo base_url('Landing')?>">MIKOM</a> -->
           </div>
-          <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark">Penelitian</a>
+          <div class="navbar-form col-4" >
+            <?php echo form_open('alghi/home/search')?>
+              <input type="text" name="keyword" class="form-control" placeholder="search">
+              <button type="submit" class="btn btn-success">Cari</button>
+            <?php echo form_close() ?>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <!-- <a class="text-muted" href="#">
@@ -50,8 +53,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </header>
 
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Topik Penelitian</h1>
+        <div class="text-center">
+          <h1 class="display-4 font-italic tex">Referensi Topik Penelitian</h1>
           <p class="lead my-3">Halaman ini berisi informasi-informasi tentang topik-topik penelitian dari berbagai Kelompok Bidang Keahlian (KBK)</p>
           <p class="btn btn-primary"><a href="Dashboard" class="text-white font-weight-bold" >Dashboard</a></p>
         </div>
@@ -73,25 +76,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <?php endforeach; ?>
       </div>
+    <!--   <div class="row">
+        <div class="col">
+          <?php echo $pagination; ?>
+        </div>
+      </div> -->
     </div>
-    <footer class="text-center">
+    <footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+    </div>
       <p>Copyright 2022</p>
     </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <script src="../../../../assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
   </body>
 </html>

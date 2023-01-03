@@ -8,16 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <?php $this->load->view("alghi/partials/head.php") ?>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>MIKOM</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/alghi/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>MIKOM</title>    
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
@@ -29,17 +20,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container">
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
-            <a class="text-muted" href="#">MIKOM</a>
-          </div>
-          <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="<?php echo site_url('Home')?>">Penelitian</a>
+          <div class="col-4 pt-1"> 
+            <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png')?>" height="30" alt="Logo light">
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="text-muted" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+            <!-- <a class="text-muted" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg> -->
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            <?php if(isset($_SESSION["username"])){?>
+              <a>Halo, <?php echo ucfirst($this->session->userdata('username')); ?></a>
+              <a class="btn btn-danger mx-4" href="<?php echo base_url('/Login/logout')?>">Logout</a>
+            <?php } ?><!-- 
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
           </div>
         </div>
       </header>
