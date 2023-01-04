@@ -15,8 +15,24 @@ class Home extends CI_Controller
             redirect(site_url('login'));
         }
         $data['judul'] = 'Home';
+
+        //library pagination
+        $this->load->library('pagination');
+
+        $config['base_url'] = 'http://mikom-ci3.test:8181/makhi/home/index';
+        // $config['base_url'] = 'http://mikom-ci3.test/makhi/home/index';
+        $config['total_rows'] = $this->Post_model->countAllPost();
+        $config['per_page'] = 6;
+
+        $this->pagination->initialize($config);
+
+        $data['start'] = $this->uri->segment(4);
+        $data['pagination'] = $this->Post_model->getPost($config['per_page'], $data['start']);
+
         $data['posts'] = $this->Post_model->getAllPost();
         $data['random'] = $this->Post_model->getAllPostRandom();
+
+
 
         $this->load->view('makhi/templates/header', $data);
         $this->load->view('makhi/home', $data);

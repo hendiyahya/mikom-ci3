@@ -52,4 +52,15 @@ class Post_model extends CI_Model
         $this->db->order_by('id', 'RANDOM');
         return $this->db->get('makhi_posts')->result_array();
     }
+
+    public function getPost($limit, $start)
+    {
+        $this->db->order_by('id', 'DESC');
+        return $this->db->get('makhi_posts', $limit, $start)->result_array();
+    }
+
+    public function countAllPost()
+    {
+        return $this->db->get('makhi_posts')->num_rows();
+    }
 }

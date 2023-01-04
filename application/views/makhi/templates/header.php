@@ -45,7 +45,7 @@
     </nav> -->
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <a class="my-0 mr-auto font-weight-normal col-9" href="<?= base_url(); ?>makhi/home">
+        <a class="my-0 mr-auto font-weight-normal col-9" href="<?= base_url(); ?>">
             <img class="navbar-brand-dark common" src="<?= base_url(); ?>assets/makhi/img/logo.png" height="30" alt="Logo light">
         </a>
         <?php if (isset($_SESSION["username"])) { ?>

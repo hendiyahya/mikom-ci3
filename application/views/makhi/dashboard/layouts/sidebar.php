@@ -15,12 +15,12 @@
                             Posts
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="<?= base_url(); ?>makhi/dashboard/gambar">
                             <span data-feather="file"></span>
                             Image
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>

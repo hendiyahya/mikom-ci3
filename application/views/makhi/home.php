@@ -85,10 +85,11 @@
 
     <div class="row">
 
-        <?php foreach ($posts as $post) : ?>
+        <?php foreach ($pagination as $post) : ?>
             <div class="card mb-4" style="width: 1300px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
+                        <!-- <?= ++$start ?> -->
                         <?php if ($post['pic'] == NULL) : ?>
                             <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" alt="..." height="100%" width="380px">
                         <?php else : ?>
@@ -106,6 +107,6 @@
                 </div>
             </div>
         <?php endforeach; ?>
-
+        <?= $this->pagination->create_links(); ?>
     </div>
 </div>
