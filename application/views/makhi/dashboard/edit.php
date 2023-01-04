@@ -15,7 +15,6 @@
                     <div class="form-group">
                         <label for="body">Body</label>
                         <input id="x" type="hidden" name="body" value="<?= $post['body']; ?>">
-
                         <trix-editor input="x"></trix-editor>
                         <?= form_error('body', '<small class="text-danger text-left">', '</small>'); ?>
                     </div>
@@ -25,7 +24,7 @@
                     <div class="form-group">
                         <label for="photo">Add Photo</label> <br>
                         <input type="file" class="form-control" id="preview_gambar" name="gambar" value="<?= $post['pic'] ?>">
-                        <h3><?= $post['pic'] ?></h3>
+                        <!-- <h3><?= $post['pic'] ?></h3> -->
                     </div>
 
                     <div class="form-group">
