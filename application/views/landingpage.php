@@ -107,7 +107,7 @@
             <div class="content pt-4 pt-lg-0">
               <h3>Tugas Proyek Keahlian</h3>
               <p class="fst-italic">
-                Dosen : Herbert Siregar, M.T,
+                Diampu oleh Bapak Herbert Siregar, M.T,
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> Ade Ariyansyah</li>
@@ -200,11 +200,11 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Mikom</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Mikom UPI</h2>
+          <p>Dibangun dan dikembangkan oleh</p>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
@@ -249,7 +249,7 @@
         <br>
         <br>
         <!-- baris dua -->
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
@@ -268,7 +268,7 @@
             <div class="icon-box icon-box-cyan">
               <div class="icon">
                 <!-- <i class="bx bx-tachometer"></i> -->
-                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/hendi.jpg" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Hendi Yahya</a></h4>
@@ -354,7 +354,7 @@
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <!-- <section id="contact" class="contact section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -420,7 +420,8 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> -->
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -430,14 +431,18 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>Scaffold</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+            <a class="mb-2 mr-md-auto font-weight-normal" href="/">
+              <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png') ?>" height="30" alt="Logo light">
+            </a>
+              <p class="mt-2">
+              <strong> Universitas Pendidikan Indonesia </strong> </br>
+              Jl. Dr. Setiabudhi No. 229 Bandung 40154</br>
+              Jawa Barat - Indonesia</br>
+              Telp. 022-2013163</br>
+              Fax. 022-2013651</br>
+              E-mail: sekuniv_upi@upi.edu</br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -449,8 +454,8 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Tautan Penting</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.upi.edu/" target="_blank">UPI</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://cs.upi.edu/v2/" target="_blank">CS UPI</a></li>
@@ -461,7 +466,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Navigation</h4>
+            <h4>Navigasi</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="ade_controllers/beranda/index">Pengabdian</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="alghi/Home">Penelitian</a></li>
@@ -471,14 +476,14 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
