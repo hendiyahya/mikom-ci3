@@ -12,7 +12,7 @@
   <!-- Favicons -->
   <link href="assets/landing/img/favicon.png" rel="icon">
   <link href="assets/landing/img/apple-touch-icon.png" rel="apple-touch-icon">
-   
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -205,15 +205,15 @@
         </div>
 
         <div class="row">
-          
+
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
               <div class="icon">
-              <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Ade Ariyansyah</a></h4>
-              <p class="description">IG  : arum.nenden </p>
+              <p class="description">IG : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
             </div>
           </div>
@@ -221,11 +221,11 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box icon-box-cyan">
               <div class="icon">
-              <img src="assets/landing/img/Alghi.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/Alghi.jpg" class="img-fluid" alt="">
               </div>
-            <br>
+              <br>
               <h4 class="title"><a href="">M. Ramadhan Alghifary</a></h4>
-              <p class="description">IG  : arum.nenden </p>
+              <p class="description">IG : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
             </div>
           </div>
@@ -238,19 +238,19 @@
               </div>
               <br>
               <h4 class="title"><a href="">Nenden Citra S.N</a></h4>
-              <p class="description">IG  : arum.nenden </p>
+              <p class="description">IG : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
             </div>
           </div>
 
-          
+
 
         </div>
         <br>
         <br>
         <!-- baris dua -->
         <div class="row">
-          
+
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
               <div class="icon">
@@ -259,7 +259,7 @@
               </div>
               <br>
               <h4 class="title"><a href="">Makhi Zainul U</a></h4>
-              <p class="description">IG  : arum.nenden </p>
+              <p class="description">IG : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
             </div>
           </div>
@@ -272,15 +272,15 @@
               </div>
               <br>
               <h4 class="title"><a href="">Hendi Yahya</a></h4>
-              <p class="description">IG  : arum.nenden </p>
+              <p class="description">IG : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
-          
+
             </div>
           </div>
 
-         
 
-         
+
+
         </div>
 
       </div>
@@ -452,22 +452,22 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.upi.edu/" target="_blank">UPI</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cs.upi.edu/v2/" target="_blank">CS UPI</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://spada.upi.edu/" target="_blank">SPADA</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://student.upi.edu/" target="_blank">SIAK</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://spot.upi.edu/" target="_blank">SPOT</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Navigation</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ade_controllers/beranda/index">Pengabdian</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="alghi/Home">Penelitian</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="arum/home">Kemahasiswaan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="makhi/home">Beasiswa</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="hendi/Beranda/index">Forum</a></li>
             </ul>
           </div>
 
