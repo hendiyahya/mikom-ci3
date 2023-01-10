@@ -34,7 +34,7 @@ class Hendi_post extends CI_Model
         // $this->db->select('*');
         $this->db->from('hendi_posts');
         $this->db->join('hendi_users', 'hendi_users.id_user = hendi_posts.user_id');
-        $this->db->join('hendi_categories', 'hendi_categories.id = hendi_posts.category_id');
+        $this->db->join('hendi_categories', 'hendi_categories.id_categories = hendi_posts.category_id');
 
         return $this->db->get()->result();
     }

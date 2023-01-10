@@ -18,7 +18,7 @@
 
   <div class="form-group col-11 mx-auto">
     <label for="IsiKonten">Isi</label>
-    <textarea name="Isi" type="text" class="form-control" id="IsiKonten" placeholder="Konten"></textarea>
+    <textarea name="Isi" type="text" class="form-controlA" id="IsiKonten" placeholder="Konten" rows="30"></textarea>
     <!-- <input name="Isi" type="text" class="form-control" id="IsiKonten" placeholder="Konten"> -->
   </div>
 

@@ -19,6 +19,7 @@
       
     </div>
 
+
 <div class="row justify-content-center">
 
   <!-- {{-- column 1 --}} -->
@@ -73,12 +74,16 @@
 
                 <h5 class="card-text"><?php echo $post->title ?></h5>
                 <p class="card-text"><?php echo $post->body ?></p>
+                <!-- post id <?php echo $post->id;?> -->
                 <div class="row">
                   <div class="col-md-8">
                     <hr />
                     <h5>Komentar</h5>
                     <?php foreach ($comments as $comment) : ?>
-                      <?php if($comment->post_id == $post->id){?>
+                      
+                      <?php if($comment->post_id == $post->id):?>
+                        <!-- komen post id <?php echo $comment->post_id;?>
+                        komen post id <?php echo $post->id;?> -->
                       <div class="card mb-2">
                         <div class="card-header">
                         <p><?php echo $comment->nama ?></p>
@@ -87,7 +92,7 @@
                             <p class="card-text"><?php echo $comment->body ?></p>
                         </div>
                       </div>
-                      <?php }?>
+                      <?php endif;?>
                     <?php endforeach ?>
                     <h5>Kirim Komentar</h5>
                     <form action="<?php echo site_url('hendi/CommentController/add') ?>" method="post" enctype="multipart/form-data" >

@@ -30,7 +30,7 @@
 
 		<div id="content-wrapper">
 
-			<div class="container-fluid">
+			<div class="col-8 my-4 mx-auto">
 
 				<?php if ($this->session->flashdata('success')): ?>
 				<div class="alert alert-success" role="alert">
@@ -42,8 +42,8 @@
 				<div class="card mb-3">
 					<div class="card-header">
 
-						<a href="<?php echo site_url('/hendi/Hendi_PostController') ?>"><i class="fas fa-arrow-left"></i>
-							Back</a>
+						<a class="btn btn-danger" href="<?php echo site_url('/hendi/Hendi_PostController') ?>"><i class="fas fa-arrow-left"></i>
+							Kembali</a>
 					</div>
 					<div class="card-body">
 
@@ -55,43 +55,42 @@
 							<input type="hidden" name="category_id" value="<?php echo $post['category_id'] ?>" />
 							<input type="hidden" name="user_id" value="<?php echo $post['user_id'] ?>" />
 
-							<div class="form-group">
-								<label for="title">Name*</label>
+							<div class="form-group mb-3">
+								<label for="title">Judul</label>
 								<input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"
 								 type="text" name="title" placeholder="post name" value="<?php echo $post['title'] ?>" />
+								 <small class="form-text text-muted">Masukkan judul untuk post yang anda buat</small>
 								<div class="invalid-feedback">
 									<?php echo form_error('name') ?>
 								</div>
 							</div>
 
-							<div class="form-group">
-								<label for="exampleFormControlSelect1">Kategori*</label>
+							<div class="form-group mb-3">
+								<label for="exampleFormControlSelect1">Kategori</label>
 								<select class="form-control" id="exampleFormControlSelect1" name="category_id">
 								<?php foreach ($categories as $category): ?>
-								<option value="<?php echo $category->id ?>" <?php echo ($category->id == $post['category_id']) ? "selected" : ''; ?> ><?php echo $category->name ?></option>
+								<option value="<?php echo $category->id_categories ?>" <?php echo ($category->id_categories == $post['category_id']) ? "selected" : ''; ?> ><?php echo $category->name ?></option>
 								<?php endforeach ?>
 								</select>
+								<small class="form-text text-muted">Pilih kategori untuk post yang anda buat</small>
 								<div class="invalid-feedback">
 									<?php echo form_error('body') ?>
 								</div>
 							</div>
 
-							<div class="form-group">
-								<label for="title">body*</label>
+							<div class="form-group mb-3">
+								<label for="title">Konten</label>
 								<textarea class="form-control <?php echo form_error('body') ? 'is-invalid':'' ?>"
 								 name="body" placeholder="post body..."><?php echo $post['body'] ?></textarea>
+								 <small class="form-text text-muted">Masukkan konten untuk post yang anda buat</small>
 								<div class="invalid-feedback">
 									<?php echo form_error('body') ?>
 								</div>
 							</div>
 
-							<input class="btn btn-success" type="submit" name="btn" value="Save" />
+							<input class="btn btn-success" type="submit" name="btn" value="Perbaharui" />
 						</form>
 
-					</div>
-
-					<div class="card-footer small text-muted">
-						* required fields
 					</div>
 
 

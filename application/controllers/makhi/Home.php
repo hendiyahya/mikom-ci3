@@ -19,8 +19,8 @@ class Home extends CI_Controller
         //library pagination
         $this->load->library('pagination');
 
-        $config['base_url'] = 'http://mikom-ci3.test:8181/makhi/home/index';
-        // $config['base_url'] = 'http://mikom-ci3.test/makhi/home/index';
+        // $config['base_url'] = 'http://mikom-ci3.test:8181/makhi/home/index';
+        $config['base_url'] = 'http://mikom-ci3.test/makhi/home/index';
         $config['total_rows'] = $this->Post_model->countAllPost();
         $config['per_page'] = 6;
 

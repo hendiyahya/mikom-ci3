@@ -32,11 +32,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </a>
             <!-- <a class="text-muted" href="<?php echo base_url('Landing')?>">MIKOM</a> -->
           </div>
-          <div class="navbar-form col-4" >
-            <?php echo form_open('alghi/home/search')?>
-              <input type="text" name="keyword" class="form-control" placeholder="search">
-              <button type="submit" class="btn btn-success">Cari</button>
+          <div class="navbar-form" >
             <?php echo form_close() ?>
+            <div class="row">
+              <div class="col">
+                <input type="text" name="keyword" class="form-control" placeholder="search">
+              </div>
+              <div class="col">
+                <span><button type="submit" class="btn btn-success">Cari</button></span>
+              </div>
+            </div>
+            <?php echo form_open('alghi/home/search')?>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <!-- <a class="text-muted" href="#">

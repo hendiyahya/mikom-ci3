@@ -46,31 +46,34 @@
 					<div class="card-body">
 
 						<form action="<?php echo site_url('hendi/Hendi_PostController/add') ?>" method="post" enctype="multipart/form-data" >
-							<div class="form-group mb-4">
-								<label for="title">Judul*</label>
+							<div class="form-group mb-3">
+								<label for="title">Judul</label>
 								<input class="form-control <?php echo form_error('title') ? 'is-invalid':'' ?>"
-								 type="text" name="title" placeholder="post title" />
+								 type="text" name="title"/>
+								 <small class="form-text text-muted">Masukkan judul untuk post yang anda buat</small>
 								<div class="invalid-feedback">
 									<?php echo form_error('title') ?>
 								</div>
 							</div>
 
-							<div class="form-group">
-								<label for="exampleFormControlSelect1">Kategori*</label>
+							<div class="form-group mb-3">
+								<label for="exampleFormControlSelect1">Kategori</label>
 								<select class="form-control" id="exampleFormControlSelect1" name="category_id">
 								<?php foreach ($categories as $category): ?>
-								<option value="<?php echo $category->id ?>"><?php echo $category->name ?></option>
+								<option value="<?php echo $category->id_categories ?>"><?php echo $category->name ?></option>
 								<?php endforeach ?>
 								</select>
+								<small class="form-text text-muted">Pilih kategori untuk post yang anda buat</small>
 								<div class="invalid-feedback">
 									<?php echo form_error('body') ?>
 								</div>
 							</div>
 
 							<div class="form-group mb-4">
-								<label for="title">Konten*</label>
-								<textarea class="form-control <?php echo form_error('body') ? 'is-invalid':'' ?>"
-								 name="body" placeholder="post body..."></textarea>
+								<label for="title">Konten</label>
+								<textarea rows="3" class="form-control <?php echo form_error('body') ? 'is-invalid':'' ?>"
+								 name="body"></textarea>
+								 <small class="form-text text-muted">Masukkan konten untuk post yang anda buat</small>
 								<div class="invalid-feedback">
 									<?php echo form_error('body') ?>
 								</div>
@@ -81,9 +84,9 @@
 
 					</div>
 
-					<div class="card-footer small text-muted">
+					<!-- <div class="card-footer small text-muted">
 						* required fields
-					</div>
+					</div> -->
 
 
 				</div>

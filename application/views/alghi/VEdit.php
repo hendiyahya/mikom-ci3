@@ -22,7 +22,7 @@
   <div class="col-11 mx-auto">
   <div class="form-group">
     <label for="IsiKonten">Isi</label>
-    <textarea name="Isi" type="text" class="form-control" id="IsiKonten" placeholder="Konten"><?php echo $post['Isi'] ?></textarea>
+    <textarea name="Isi" type="text" class="form-control" id="IsiKonten" placeholder="Konten" rows="20"><?php echo $post['Isi'] ?></textarea>
   </div>
 </div>
   <br>

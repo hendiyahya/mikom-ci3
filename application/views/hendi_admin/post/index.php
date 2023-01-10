@@ -15,8 +15,12 @@
         <a class="p-2 text-dark" href="#">Pricing</a>
       </nav> -->
       <?php if(isset($_SESSION["username"])){?>
-        <a class="btn btn-danger mr-2" href="/Login/Logout">Logout</a>
-        <!-- <a class="btn btn-primary" href="/Login">Dashboard</a> -->
+        <div class="col">
+          <a class="btn btn-primary" href="/hendi/Beranda/index">Forum</a>
+        </div>
+        <div class="col">
+          <a class="btn btn-danger" href="/Login/Logout">Logout</a>
+        </div>
       <?php } ?>
       
     </div>
@@ -44,7 +48,7 @@
       </div>
       <div class="card-body">
         <div class="table-responsive">
-          <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
+          <table class="table table-hover table-striped" id="dataTable" width="100%" cellspacing="0">
             <thead>
               <tr>
                 <!-- <th>Kategori</th> -->
@@ -64,7 +68,7 @@
                 </td>
                 <td>
                   <?php foreach ($categories as $category): ?>
-                    <?php if($post['category_id'] == $category->id): ?>
+                    <?php if($post['category_id'] == $category->id_categories): ?>
                       <?php echo $category->name ?>
                     <?php endif ?>
                   <?php endforeach?>
