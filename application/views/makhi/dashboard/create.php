@@ -7,7 +7,7 @@
                 <form action="<?= base_url(); ?>makhi/dashboard/create" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input name="title" type="text" class="form-control" id="title" placeholder="title" value="<?= set_value('title'); ?>">
+                        <input name="title" type="text" class="form-control" id="title"  value="<?= set_value('title'); ?>">
                         <?= form_error('title', '<small class="text-danger text-left">', '</small>'); ?>
                     </div>
 

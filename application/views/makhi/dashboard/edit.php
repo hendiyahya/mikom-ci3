@@ -8,7 +8,7 @@
                     <input type="hidden" name="id" value="<?= $post['id']; ?>">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input name="title" type="text" class="form-control" id="title" placeholder="title" value="<?= $post['title']; ?>">
+                        <input name="title" type="text" class="form-control" id="title" value="<?= $post['title']; ?>">
                         <?= form_error('title', '<small class="text-danger text-left">', '</small>'); ?>
                     </div>
 

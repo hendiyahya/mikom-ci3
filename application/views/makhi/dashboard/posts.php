@@ -25,9 +25,10 @@
                     </thead>
                     <tbody>
                         <?php $no = 1;
-                        foreach ($posts as $post) : ?>
+                        foreach ($pagination as $post) : ?>
                             <tr>
-                                <td><?= $no; ?></td>
+                                <!-- <?= ++$start ?> -->
+                                <td><?= $start; ?></td>
                                 <td><?= $post['title']; ?></td>
                                 <td class="text-wrap"><?= $post['excerpt'] ?></td>
                                 <td class="text-center">
@@ -42,6 +43,7 @@
                         endforeach; ?>
                     </tbody>
                 </table>
+                <?= $this->pagination->create_links(); ?>
             </div>
         </div>
     </div>
