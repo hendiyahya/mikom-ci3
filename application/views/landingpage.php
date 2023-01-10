@@ -212,7 +212,7 @@
               <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
               </div>
               <br>
-              <h4 class="title"><a href="">Nenden Citra S.N</a></h4>
+              <h4 class="title"><a href="">Ade Ariyansyah</a></h4>
               <p class="description">IG  : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
             </div>
@@ -258,7 +258,7 @@
                 <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
               </div>
               <br>
-              <h4 class="title"><a href="">Nenden Citra S.N</a></h4>
+              <h4 class="title"><a href="">Makhi Zainul U</a></h4>
               <p class="description">IG  : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
             </div>
@@ -271,7 +271,7 @@
                 <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
               </div>
               <br>
-              <h4 class="title"><a href="">Nenden Citra S.N</a></h4>
+              <h4 class="title"><a href="">Hendi Yahya</a></h4>
               <p class="description">IG  : arum.nenden </p>
               <p class="description">TTL : Bandung, 19/12/2001 </p>
           
