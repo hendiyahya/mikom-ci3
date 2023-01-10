@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
             <a class="my-0 mr-auto font-weight-normal col-9" href="/">
-        <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png')?>" height="30" alt="Logo light" href="<?php echo base_url('Landing')?>">
+        <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png')?>" height="30" alt="Logo light" href="<?php echo base_url('/landingpage')?>">
       </a>
             <!-- <a class="text-muted" href="<?php echo base_url('Landing')?>">MIKOM</a> -->
           </div>
