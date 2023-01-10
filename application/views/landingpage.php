@@ -272,8 +272,8 @@
               </div>
               <br>
               <h4 class="title"><a href="">Hendi Yahya</a></h4>
-              <p class="description">IG : arum.nenden </p>
-              <p class="description">TTL : Bandung, 19/12/2001 </p>
+              <p class="description">IG : hendiyahya </p>
+              <p class="description">TTL : Garut, 20/08/2000 </p>
 
             </div>
           </div>
