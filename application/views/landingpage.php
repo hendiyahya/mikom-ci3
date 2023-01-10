@@ -107,7 +107,7 @@
             <div class="content pt-4 pt-lg-0">
               <h3>Tugas Proyek Keahlian</h3>
               <p class="fst-italic">
-                Dosen : Herbert Siregar, M.T,
+                Diampu oleh Bapak Herbert Siregar, M.T,
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> Ade Ariyansyah</li>
@@ -204,7 +204,7 @@
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
@@ -249,7 +249,7 @@
         <br>
         <br>
         <!-- baris dua -->
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
@@ -268,7 +268,7 @@
             <div class="icon-box icon-box-cyan">
               <div class="icon">
                 <!-- <i class="bx bx-tachometer"></i> -->
-                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/hendi.jpg" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Hendi Yahya</a></h4>
@@ -366,8 +366,8 @@
               <p>
                 Universitas Pendidikan Indonesia <br>
                 Jl. Dr. Setiabudhi No. 229 Bandung <br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Phone:</strong> 022-2013163<br>
+                <strong>Email:</strong> sekuniv_upi@upi.edu<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
