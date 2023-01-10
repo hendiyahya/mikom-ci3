@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/landing/img/favicon.png" rel="icon">
-  <link href="assets/landing/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <!-- <link href="assets/landing/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
 
   <!-- Google Fonts -->
@@ -107,7 +107,7 @@
             <div class="content pt-4 pt-lg-0">
               <h3>Tugas Proyek Keahlian</h3>
               <p class="fst-italic">
-                Diampu oleh Bapak Herbert Siregar, M.T,
+                Dosen : Herbert Siregar, M.T,
               </p>
               <ul>
                 <li><i class="bi bi-check-circle"></i> Ade Ariyansyah</li>
@@ -200,11 +200,11 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Mikom UPI</h2>
-          <p>Dibangun dan dikembangkan oleh</p>
+          <h2>Our Team</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row">
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
@@ -249,7 +249,7 @@
         <br>
         <br>
         <!-- baris dua -->
-        <div class="row justify-content-center">
+        <div class="row">
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
@@ -268,7 +268,7 @@
             <div class="icon-box icon-box-cyan">
               <div class="icon">
                 <!-- <i class="bx bx-tachometer"></i> -->
-                <img src="assets/landing/img/hendi.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Hendi Yahya</a></h4>
@@ -352,77 +352,6 @@
       </div>
     </section>End Clients Section -->
 
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-right">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Contact Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -431,18 +360,14 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-            <a class="mb-2 mr-md-auto font-weight-normal" href="/">
-              <img class="navbar-brand-dark common" src="<?php echo base_url('assets/img/logo.png') ?>" height="30" alt="Logo light">
-            </a>
-              <p class="mt-2">
-              <strong> Universitas Pendidikan Indonesia </strong> </br>
-              Jl. Dr. Setiabudhi No. 229 Bandung 40154</br>
-              Jawa Barat - Indonesia</br>
-              Telp. 022-2013163</br>
-              Fax. 022-2013651</br>
-              E-mail: sekuniv_upi@upi.edu</br>
+              <h3>Mikom</h3>
+              <p>
+                Universitas Pendidikan Indonesia <br>
+                Jl. Dr. Setiabudhi No. 229 Bandung <br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -454,8 +379,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Tautan Penting</h4>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.upi.edu/" target="_blank">UPI</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://cs.upi.edu/v2/" target="_blank">CS UPI</a></li>
@@ -466,7 +391,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Navigasi</h4>
+            <h4>Navigation</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="ade_controllers/beranda/index">Pengabdian</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="alghi/Home">Penelitian</a></li>
