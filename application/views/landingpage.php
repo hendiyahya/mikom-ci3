@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Scaffold Bootstrap Template - Index</title>
+  <title>Landing Page</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/landing/img/favicon.png" rel="icon">
   <link href="assets/landing/img/apple-touch-icon.png" rel="apple-touch-icon">
+   
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -100,23 +101,24 @@
 
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-in">
-            <img src="assets/landing/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/landing/img/kita.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 d-flex flex-column justify-contents-center" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0">
-              <h3>Learn more about us</h3>
+              <h3>Tugas Proyek Keahlian</h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Dosen : Herbert Siregar, M.T,
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperd</li>
+                <li><i class="bi bi-check-circle"></i> Ade Ariyansyah</li>
+                <li><i class="bi bi-check-circle"></i> M. Ramadhan Alghifary</li>
+                <li><i class="bi bi-check-circle"></i> Nenden Citra S.N / 1908589</li>
+                <li><i class="bi bi-check-circle"></i> Makhi Zainul U</li>
+                <li><i class="bi bi-check-circle"></i> Hendi Yahya</li>
               </ul>
-              <p>
+              <!-- <p>
                 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate tera noden carma palorp mades tera.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
