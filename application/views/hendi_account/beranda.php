@@ -98,7 +98,7 @@
   
 </section>
 
-<div class="flex row justify-content-center">
+<div class="row justify-content-center">
 
 
 
@@ -146,12 +146,13 @@
                       </div>
                       <?php endif;?>
                     <?php endforeach ?>
+                    <hr />
                     <h5>Kirim Komentar</h5>
                     <form action="<?php echo site_url('hendi/CommentController/add') ?>" method="post" enctype="multipart/form-data" >
                         <div class="form-group mb-2">
                             <input type="hidden" name="post_id" value="<?php echo $post->id ?>" />
                         </div>
-                        <div class="form-group mb-4">
+                        <div class="form-group mb-2">
                           <textarea class="form-control <?php echo form_error('body') ? 'is-invalid':'' ?>"
                           name="body" placeholder="Isi komentar disini"></textarea>
                           <div class="invalid-feedback">
@@ -159,7 +160,7 @@
                           </div>
                         </div>
 
-                      <input class="btn btn-success" type="submit" name="btn" value="Tambah" />
+                      <input class="btn btn-success" type="submit" name="btn" value="Kirim" />
                     </form>
                   </div>
                 </div>
@@ -174,35 +175,20 @@
 
     <!-- {{-- column 1 --}} -->
     <div class="col-2 hidden-mobile ml-2">
-      <!-- Sidebar -->
+
       <nav id="sidebar">
-          <div class="sidebar-header">
-              <h4>Kategori</h4>
+          <div>
+              <h4>Menu</h4>
           </div>
           <?php if(isset($_SESSION["username"])){?>
-            <small><a class="btn btn-outline-primary mb-2">Akademik</a></small>
-            <small><a class="btn btn-outline-primary mb-2">Administrasi</a></small>
-            <small><a class="btn btn-outline-primary mb-2">Organisasi</a></small>
-            <small><a class="btn btn-outline-primary mb-2">Birokrasi</a></small>
-            <small><a class="btn btn-outline-primary mb-2">Teknologi</a></small>
+            <small><a href="<?php echo site_url('hendi/Hendi_PostController/add') ?>" class="btn btn-primary mb-2">Buat Post Baru</a></small>
           <?php }?>
-
-
-          <!-- <div class="sidebar-header">
-              <h4>Pilihan Topik</h4>
-          </div>
-
-          <ul class="list-unstyled components list-group">
-              <?php foreach ($categories as $category) : ?>
-                <a href="/Dashboard?Category=<?php echo $category->slug ?>" class="list-group-item list-group-item-action border shadow-soft rounded mb-1 ">
-                    <p class="text-dark text-decoration-none"><?php echo $category->name ?></p>
-                </a>
-              <?php endforeach?>
-          </ul> -->
 
       </nav>
 
-  </div>
+    </div>
+
+
 </div>
 
 </main><!-- End #main -->

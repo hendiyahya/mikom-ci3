@@ -225,8 +225,8 @@
               </div>
               <br>
               <h4 class="title"><a href="">M. Ramadhan Alghifary</a></h4>
-              <p class="description">IG : arum.nenden </p>
-              <p class="description">TTL : Bandung, 19/12/2001 </p>
+              <p class="description">IG : alghilagii </p>
+              <p class="description">TTL : Bandung, 14/12/2000 </p>
             </div>
           </div>
 
@@ -417,14 +417,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Scaffold</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong><span>Universitas Pendidikan Indonesia </span></strong> - Made with Scaffold. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
