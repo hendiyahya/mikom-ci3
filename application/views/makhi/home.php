@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="container carousel slide bg-light shadow" data-ride="carousel">
+<div id="carouselExampleCaptions" class="container carousel slide bg-light shadow bgcolor" data-ride="carousel" style="margin-top: 100px;">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>

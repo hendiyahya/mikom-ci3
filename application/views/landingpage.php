@@ -110,7 +110,7 @@
                 Diampu oleh Bapak Herbert Siregar, M.T,
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ade Ariyansyah</li>
+                <li><i class="bi bi-check-circle"></i> Ade Ariyansyah / 1904442</li>
                 <li><i class="bi bi-check-circle"></i> M. Ramadhan Alghifary / 1902265</li>
                 <li><i class="bi bi-check-circle"></i> Nenden Citra S.N / 1908589</li>
                 <li><i class="bi bi-check-circle"></i> Makhi Zainul U</li>
@@ -209,12 +209,12 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
               <div class="icon">
-                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/adeariyan.jpg" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Ade Ariyansyah</a></h4>
-              <p class="description">IG : arum.nenden </p>
-              <p class="description">TTL : Bandung, 19/12/2001 </p>
+              <p class="description">IG : adearians_ </p>
+              <p class="description">TTL : Tegal, 29/01/2001 </p>
             </div>
           </div>
 
@@ -255,12 +255,12 @@
             <div class="icon-box icon-box-pink">
               <div class="icon">
                 <!-- <i class="bx bx-tachometer"></i> -->
-                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/makhi1.jpeg" width="" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Makhi Zainul U</a></h4>
-              <p class="description">IG : arum.nenden </p>
-              <p class="description">TTL : Bandung, 19/12/2001 </p>
+              <p class="description">IG : makh.zu </p>
+              <p class="description">TTL : Bandung, 28/08/2001 </p>
             </div>
           </div>
 
@@ -356,6 +356,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -414,7 +415,7 @@
       </div>
     </div>
 
-    <!-- <div class="container">
+    <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Scaffold</span></strong>. All Rights Reserved
       </div>
@@ -425,7 +426,7 @@
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
-    </div> -->
+    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
