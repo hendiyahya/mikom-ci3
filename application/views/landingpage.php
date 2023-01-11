@@ -255,12 +255,12 @@
             <div class="icon-box icon-box-pink">
               <div class="icon">
                 <!-- <i class="bx bx-tachometer"></i> -->
-                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/makhi1.jpeg" width="" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Makhi Zainul U</a></h4>
-              <p class="description">IG : arum.nenden </p>
-              <p class="description">TTL : Bandung, 19/12/2001 </p>
+              <p class="description">IG : makh.zu </p>
+              <p class="description">TTL : Bandung, 28/08/2001 </p>
             </div>
           </div>
 
