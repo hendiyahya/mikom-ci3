@@ -104,7 +104,7 @@ class Home extends CI_Controller {
 		$keyword = $this->input->post('keyword');
 		$DATA['posts']= $this->Alghi_Post->get_keyword($keyword);
 
-		$this->load->view('/alghi/Home', $DATA);
+		$this->load->view('/alghi/VDashboard', $DATA);
 
 	}
 }

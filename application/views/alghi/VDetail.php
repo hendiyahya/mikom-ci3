@@ -47,13 +47,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <br>
               <div class="m-auto text-muted">
                 <p class="text-center"><?php echo $post['Kategori'] ?></p></div>
-              <p class="card-text mb-auto"><?php echo $post['Isi'] ?></p>
-              
+                <p class="card-text mb-auto"><?php echo $post['Isi'] ?></p>
             </div>
           </div>        
         </div>
       </div>
     </div>
+    
     <footer class="text-center">
       <p>Copyright 2022</p>
       <p>

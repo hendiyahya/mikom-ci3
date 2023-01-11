@@ -3,17 +3,18 @@
   <?php $this->load->view("alghi/partials/head.php") ?>
   <style> 
 
-    th {
+    th{
         text-align: center;
-}
+    }
 
     tr:nth-child(even){
         background-color: #f2f2f2;
-}      
+    }
+
   </style>
 </head>
 <body>
-<div class="container-lg mt-4 ">
+<div class="container-lg mt-4">
     <div class="table-responsive">
         <div class="table-wrapper">
             <div class="table-title">
@@ -32,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <table class="table table-bordered">
+            <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
                         <th>Judul</th>
@@ -42,14 +43,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                <tr>
                   <?php foreach ($posts as $post) : ?>
                     <tr>
                         <td><?php echo $post->Judul ?></td>
                         <td><?php echo $post->Kategori ?></td>
                         <td><?php echo $post->Isi ?></td>
-                        <td><a href="<?php echo base_url('/alghi/AddNew/edit/')?><?php echo $post->id_posts ?>" class="btn btn-primary" >Edit</a> </td>
-                        <td><a href="<?php echo base_url('/alghi/AddNew/delete/')?><?php echo $post->id_posts ?>" class="btn btn-primary">Hapus</a></td>
+                        <td><a href="<?php echo base_url('/alghi/AddNew/edit/')?><?php echo $post->id_posts ?>" class="btn btn-primary" >Edit</a>
+                        <td><a href="<?php echo base_url('/alghi/AddNew/delete/')?><?php echo $post->id_posts ?>" class="btn btn-primary">Hapus</a>
                         </td>
                     </tr>
                 <?php endforeach ?>    
