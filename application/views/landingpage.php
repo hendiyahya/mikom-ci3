@@ -356,6 +356,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -414,7 +415,7 @@
       </div>
     </div>
 
-    <!-- <div class="container">
+    <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Scaffold</span></strong>. All Rights Reserved
       </div>
@@ -425,7 +426,7 @@
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
-    </div> -->
+    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
