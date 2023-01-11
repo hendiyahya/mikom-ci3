@@ -8,9 +8,9 @@
         <div class="carousel-item active">
             <a href="<?= base_url() ?>makhi/home/detail/<?= $posts[0]['id'] ?>">
                 <?php if ($posts[0]['pic'] == NULL) : ?>
-                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="600">
+                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="auto" height="300px">
                 <?php else : ?>
-                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[0]['pic'] ?>" class="d-block mx-auto" alt="..." width="600">
+                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[0]['pic'] ?>" class="d-block mx-auto" alt="..." width="auto" height="300px">
                 <?php endif; ?>
 
                 <div class="carousel-caption d-md-block m-auto bg-light shadow" style="width: 30%;">
@@ -22,9 +22,9 @@
         <div class="carousel-item">
             <a href="<?= base_url() ?>makhi/home/detail/<?= $posts[1]['id'] ?>">
                 <?php if ($posts[1]['pic'] == NULL) : ?>
-                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="600">
+                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="auto" height="300px">
                 <?php else : ?>
-                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[1]['pic'] ?>" class="d-block mx-auto" alt="..." width="600">
+                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[1]['pic'] ?>" class="d-block mx-auto" alt="..." width="auto" height="300px">
                 <?php endif; ?>
                 <div class="carousel-caption d-none d-md-block bg-light shadow">
                     <h5 class="text-dark"><?= $posts[1]['title'] ?></h5>
@@ -35,9 +35,9 @@
         <div class="carousel-item">
             <a href="<?= base_url() ?>makhi/home/detail/<?= $posts[2]['id'] ?>">
                 <?php if ($posts[2]['pic'] == NULL) : ?>
-                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="600">
+                    <img src="<?= base_url(); ?>assets/makhi/img/scholarship.jpg" class="d-block mx-auto" alt="..." width="auto" height="300px">
                 <?php else : ?>
-                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[2]['pic'] ?>" class="d-block mx-auto" alt="..." width="600">
+                    <img src="<?= base_url(); ?>assets/makhi/img/upload/<?= $posts[2]['pic'] ?>" class="d-block mx-auto" alt="..." width="auto" height="300px">
                 <?php endif; ?>
                 <div class="carousel-caption d-none d-md-block m-auto bg-light shadow" style="width: 30%;">
                     <h5 class="text-dark"><?= $posts[2]['title'] ?></h5>
