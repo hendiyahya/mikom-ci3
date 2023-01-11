@@ -33,6 +33,23 @@ class Ade_post extends CI_Model {
 		$this->db->delete('ade_posts');
 	}
 
+	public function getPost($limit, $start)
+    {
+        $this->db->order_by('ID', 'DESC');
+        return $this->db->get('ade_posts', $limit, $start)->result_array();
+    }
+
+    public function getAllPostRandom()
+    {
+        $this->db->order_by('ID', 'RANDOM');
+        return $this->db->get('ade_posts')->result_array();
+    }
+	
+    public function countAllPost()
+    {
+        return $this->db->get('ade_posts')->num_rows();
+    }
+
 
 }
 

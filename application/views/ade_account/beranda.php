@@ -8,13 +8,26 @@
     <meta name="generator" content="Hugo 0.101.0">
     <title>Home</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/album/">
-
-    
-
     <!-- Bootstrap core CSS -->
     <link href="<?= base_url(); ?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="<?= base_url(); ?>assets/ade/images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
 
 
     <style>
@@ -41,7 +54,7 @@
   <body>
     
 <header>
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style="background-color:#E0FFFF">
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4  border-bottom shadow-sm" style="background-color:#E0FFFF">
       <a class="my-0 mr-md-auto font-weight-normal" href="/">
         <img class="navbar-brand-dark common" src="<?= base_url(); ?>assets/img/logo.png"  height="30" alt="Logo light">
       </a>
@@ -67,16 +80,32 @@
     </div>
 </header>
 
-<main role="main">
+<main role="main">      
 
-      
+    <div class="header_section mb-5">
+      <!-- banner section start -->
+      <div class="about0_section layout_padding">
+         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <<h2 style="text-align: center; margin-top: -20px;color:white; font-size:50px"><b>Pengabdian Mahasiswa Pada Masyarakat</b>  </h2>
+                     <br><br><br><br>
+                     <p class="banner_text">Pengabdian pada masyarakat atau disingkat P2M, merupakan kegiatan yang dilakukan 
+                      sebagai implementasi salah satu pilar dari Tri Dharma Perguruan Tinggi yang diselenggarakan oleh divisi 
+                      advokasi sosial dan politik (Divadsospol). P2M ini merupakan upaya pengembangan masyarakat kearah yang lebih
+                       baik dengan melakukan beberapa perbaikan dan perubahan melalui pendidikan, penelitian, dan donasi demi 
+                       terwujudnya masyarakat yang maju, tentram, dan harmonis.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+   </div>
 
-    <div class="container">
-      <h2 style="text-align: center; margin-top: 50px;">Pengabdian Mahasiswa Pada Masyarakat </h2>
-      <br><br>
-    </div>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-6 bg-light">
     <div class="container">
 
       <div class="row">

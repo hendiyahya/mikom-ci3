@@ -65,6 +65,44 @@
 		</div>
 		
 	</div>
+	<!-- <?php foreach ($queryNgabdiDetail as $post) : ?>
+          <div class="container mb-2">
+            <div class="card">
+                  <div class="col-md-8">
+                    <h5>Komentar</h5>
+                    <?php foreach ($comments as $comment) : ?>
+                      <?php if($comment->post_id == $post->id){?>
+                      <div class="card mb-2">
+                        <div class="card-header">
+                        <p><?php echo $comment->nama ?></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><?php echo $comment->body ?></p>
+                        </div>
+                      </div>
+                      <?php }?>
+                    <?php endforeach ?>
+                    <h5>Kirim Komentar</h5>
+                    <form action="<?php echo site_url('hendi/CommentController/add') ?>" method="post" enctype="multipart/form-data" >
+                        <div class="form-group mb-2">
+                            <input type="hidden" name="post_id" value="<?php echo $post->id ?>" />
+                        </div>
+                        <div class="form-group mb-4">
+                          <textarea class="form-control <?php echo form_error('body') ? 'is-invalid':'' ?>"
+                          name="body" placeholder="Isi komentar disini"></textarea>
+                          <div class="invalid-feedback">
+                            <?php echo form_error('body') ?>
+                          </div>
+                        </div>
+
+                      <input class="btn btn-success" type="submit" name="btn" value="Tambah" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php endforeach?> -->
 </body>
 </html> 
 
