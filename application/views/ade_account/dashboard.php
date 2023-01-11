@@ -9,6 +9,25 @@
     <title>Halaman Dashboard</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/offcanvas/">
+    <link href="<?= base_url(); ?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="<?= base_url(); ?>assets/ade/images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
 
     
 
@@ -25,8 +44,8 @@
       </a>
       <a><?php echo ucfirst($this->session->userdata('username')); ?>'s Post</a>
 
-       <a href="/"><button type="button" class="btn btn-info mr-2 ml-2" >Landing Page</button></a>
-       <a href="beranda/index"><button type="button" class="btn btn-info mr-2" >Home</button></a>
+
+       <a href="beranda/index"><button type="button" class="btn btn-info ml-3 mr-2" >Home</button></a>
 
 
       <?php if(isset($_SESSION["username"])){?>

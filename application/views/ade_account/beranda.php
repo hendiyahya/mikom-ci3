@@ -58,12 +58,20 @@
       <a class="my-0 mr-md-auto font-weight-normal" href="/">
         <img class="navbar-brand-dark common" src="<?= base_url(); ?>assets/img/logo.png"  height="30" alt="Logo light">
       </a>
+      <!-- <div class="row">
+              <div class="col">
+                <input type="text" name="keyword" class="form-control" placeholder="search">
+              </div>
+              <div class="col">
+                <span><button type="submit" class="btn btn-success">Cari</button></span>
+              </div>
+            </div> -->
 
       
       <a><?php echo ucfirst($this->session->userdata('username')); ?></a>
+    
 
-      <a href="/"><button type="button" class="btn btn-info ml-2 mr-2" >Landing Page</button></a>
-      <a class="btn btn-info mr-2" href="<?= base_url(); ?>index.php/ade_controllers/Dashboard">Dashboard</a>
+      <a class="btn btn-info ml-3" href="<?= base_url(); ?>index.php/ade_controllers/Dashboard">Dashboard</a>
         <?php if(isset($_SESSION["username"])){?>
 
         <a class="btn btn-danger mx-2" href="/Login/Logout">Logout</a>

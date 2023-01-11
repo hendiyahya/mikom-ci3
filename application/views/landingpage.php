@@ -110,7 +110,7 @@
                 Diampu oleh Bapak Herbert Siregar, M.T,
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ade Ariyansyah</li>
+                <li><i class="bi bi-check-circle"></i> Ade Ariyansyah / 1904442</li>
                 <li><i class="bi bi-check-circle"></i> M. Ramadhan Alghifary / 1902265</li>
                 <li><i class="bi bi-check-circle"></i> Nenden Citra S.N / 1908589</li>
                 <li><i class="bi bi-check-circle"></i> Makhi Zainul U</li>
@@ -209,12 +209,12 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in">
             <div class="icon-box icon-box-pink">
               <div class="icon">
-                <img src="assets/landing/img/arum1.jpg" class="img-fluid" alt="">
+                <img src="assets/landing/img/adeariyan.jpg" class="img-fluid" alt="">
               </div>
               <br>
               <h4 class="title"><a href="">Ade Ariyansyah</a></h4>
-              <p class="description">IG : arum.nenden </p>
-              <p class="description">TTL : Bandung, 19/12/2001 </p>
+              <p class="description">IG : adearians_ </p>
+              <p class="description">TTL : Tegal, 29/01/2001 </p>
             </div>
           </div>
 
