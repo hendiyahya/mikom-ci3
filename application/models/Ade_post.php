@@ -36,6 +36,7 @@ class Ade_post extends CI_Model {
 
 	public function getPost($limit, $start)
     {
+		$this->db->where('Status', 1);
         return $this->db->get('ade_posts', $limit, $start)->result_array();
     }
 

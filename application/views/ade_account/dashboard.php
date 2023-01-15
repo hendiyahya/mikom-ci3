@@ -58,7 +58,7 @@
       <th scope="col" style="width:30%">Caption</th>
       <th scope="col" style="width:30%">Foto</th>
       <th scope="col">Aksi</th>
-      <th scope="col">Aktif</th>
+      <th scope="col">Status</th>
 
     </tr>
   </thead>
@@ -72,14 +72,15 @@
 			<td  style="text-align:center;"><?php echo $count ?></td>
       <td><?php echo $post["Judul"] ?></td>
 			<td style="text-align:center;"><?php echo $post["Waktu"] ?></td>
-			<td style="text-align:justify;"><?php echo $post["Caption"] ?></td>
+			<td style="text-align:justify;"><?php echo substr($post["Caption"],0,500); ?>....</td>
       <td><img style="width: 400px; height: 250px"  src="<?= base_url(); ?>assets/ade/img/<?php echo $post["Foto"] ?>"></img></td>
-      <td><a href="<?php echo base_url('ade_controllers/edit_post/halaman_edit') ?>/<?php echo $post["ID"] ?>"><button class="btn btn-primary mr-2" ><b>Edit<b></button></a><a href="<?php echo base_url('ade_controllers/delete_post/fungsiDelete') ?>/<?php echo $post["ID"] ?>"><button class="btn btn-danger"><b>Delete<b></button></a></td>
-      <td><?php if ($post['Status'] == 1){
+      <td><a href="<?php echo base_url('ade_controllers/edit_post/halaman_edit') ?>/<?php echo $post["ID"] ?>"><button class="btn btn-primary mr-2" ><b>Edit<b></button></a>
+      <a href="<?php echo base_url('ade_controllers/delete_post/fungsiDelete') ?>/<?php echo $post["ID"] ?>"><button class="btn btn-danger"><b>Delete<b></button></a></td>
+      <td><b><?php if ($post['Status'] == 1){
         echo 'Aktif';
       } else{
         echo 'Nonaktif';
-      } ?> </td>
+      } ?></b> </td>
 		</tr>
 		<?php } ?>
   </tbody>
