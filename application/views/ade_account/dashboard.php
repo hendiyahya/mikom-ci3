@@ -4,38 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.101.0">
     <title>Halaman Dashboard</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/offcanvas/">
-    <link href="<?= base_url(); ?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/bootstrap.min.css">
    <!-- style css -->
    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/style.css">
-   <!-- Responsive-->
-   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/responsive.css">
-   <!-- fevicon -->
-   <link rel="icon" href="<?= base_url(); ?>assets/ade/images/fevicon.png" type="image/gif" />
-   <!-- Scrollbar Custom CSS -->
-   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-   <!-- Tweaks for older IEs-->
-   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
-   <!-- owl stylesheets -->
-   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.carousel.min.css">
-   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.theme.default.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen">
-
-    
-
     <!-- Bootstrap core CSS -->
  <link href="<?= base_url(); ?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom styles for this template -->
-<!-- <link href="<?= base_url(); ?>assets/css/offcanvas.css" rel="stylesheet"> -->
+
   </head>
   <body style="background-color:light">
   	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm" style="background-color:#E0FFFF">
@@ -72,7 +46,7 @@
 			<a href="<?php echo base_url('ade_controllers/tambah_post/halaman_tambah') ?>"><button class="btn btn-success" ><b class="fa">Tambah Berita Pengabdian</b></button></a>
 		</div>
 
-  <div class="my-3 bg-white rounded shadow-sm" >
+  <div class="bg-white rounded shadow-sm" style="width:1500px; margin-left:-200px;">
 		
 
     <table class="table" style="background-color:#E0FFFF" >
@@ -81,23 +55,31 @@
       <th scope="col">No</th>
       <th scope="col">Judul</th>
       <th scope="col">Waktu</th>
-      <th scope="col">Caption</th>
+      <th scope="col" style="width:30%">Caption</th>
+      <th scope="col" style="width:30%">Foto</th>
       <th scope="col">Aksi</th>
+      <th scope="col">Aktif</th>
 
     </tr>
   </thead>
-  	<?php 
+  	 <?php 
 			$count = 0;
-			foreach ($queryAllNgabdi as $row) {
+			foreach ($queryAllNgabdi as $post) {
 				$count = $count + 1;
-		 ?>
+		 ?> 
   <tbody >
     <tr style="border-style: solid; border-color: black" >
 			<td  style="text-align:center;"><?php echo $count ?></td>
-			<td><?php echo $row["Judul"] ?></td>
-			<td style="text-align:center;"><?php echo $row["Waktu"] ?></td>
-			<td style="text-align:justify;"><?php echo $row["Caption"] ?></td>
-			<td><a href="<?php echo base_url('ade_controllers/edit_post/halaman_edit') ?>/<?php echo $row["ID"] ?>"><button class="btn btn-primary mr-2" ><b>Edit<b></button></a><a href="<?php echo base_url('ade_controllers/delete_post/fungsiDelete') ?>/<?php echo $row["ID"] ?>"><button class="btn btn-danger"><b>Delete<b></button></a></td>
+      <td><?php echo $post["Judul"] ?></td>
+			<td style="text-align:center;"><?php echo $post["Waktu"] ?></td>
+			<td style="text-align:justify;"><?php echo $post["Caption"] ?></td>
+      <td><img style="width: 400px; height: 250px"  src="<?= base_url(); ?>assets/ade/img/<?php echo $post["Foto"] ?>"></img></td>
+      <td><a href="<?php echo base_url('ade_controllers/edit_post/halaman_edit') ?>/<?php echo $post["ID"] ?>"><button class="btn btn-primary mr-2" ><b>Edit<b></button></a><a href="<?php echo base_url('ade_controllers/delete_post/fungsiDelete') ?>/<?php echo $post["ID"] ?>"><button class="btn btn-danger"><b>Delete<b></button></a></td>
+      <td><?php if ($post['Status'] == 1){
+        echo 'Aktif';
+      } else{
+        echo 'Nonaktif';
+      } ?> </td>
 		</tr>
 		<?php } ?>
   </tbody>

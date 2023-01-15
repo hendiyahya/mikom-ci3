@@ -11,6 +11,10 @@ class Dashboard extends CI_Controller {
 
 		public function index()
 	{
+		if(!isset($_SESSION["username"])){
+            //alihkan ke halaman login
+			redirect(site_url('login'));
+        }
 		$queryAllPengabdian = $this->Ade_post->getDataPengabdian();
 		$data = array('queryAllNgabdi' => $queryAllPengabdian);
 		// var_dump($data);

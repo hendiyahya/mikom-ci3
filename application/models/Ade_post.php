@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Ade_post extends CI_Model {
 
 	function getDataPengabdianall() {
+		$this->db->where('Status', 1);
 		$query = $this->db->get('ade_posts');
 		return $query->result();
 	}
@@ -20,7 +21,7 @@ class Ade_post extends CI_Model {
 	function getDataPengabdianDetail($ID) {
 		$this->db->where('ID', $ID);
 		$query = $this->db->get('ade_posts');
-		return $query->row();
+		return $query->row_array();
 	}
 
 	function updateDataPengabdian($ID, $data) {
@@ -35,7 +36,6 @@ class Ade_post extends CI_Model {
 
 	public function getPost($limit, $start)
     {
-        $this->db->order_by('ID', 'DESC');
         return $this->db->get('ade_posts', $limit, $start)->result_array();
     }
 
@@ -50,6 +50,35 @@ class Ade_post extends CI_Model {
         return $this->db->get('ade_posts')->num_rows();
     }
 
+	public function editPost($ID, $gambar)
+    {
+        $data = $this->getDataPengabdianDetail($ID);
+
+        $post =  [
+			'Judul' => $this->input->post('Judul', true),
+			'Waktu' => $this->input->post('Waktu', true),
+			'Caption' => $this->input->post('Caption', true),
+			'Foto' => $gambar,
+			'Status' => $this->input->post('Status', true)
+			// 'datecreated' => date("Y/m/d h:i:sa", time())
+		];
+		// var_dump($post);
+		// die;
+        $data['Judul'] = $post['Judul'];
+        $data['Waktu'] = $post['Waktu'];
+        $data['Caption'] = $post['Caption'];
+        // $data['Foto'] = $post['Foto'];
+		if ($post['Foto'] == Null){
+			$data['Foto'];
+		} else{
+			$data['Foto'] = $post['Foto'];
+		}
+		$data['Status'] = $post['Status'];
+
+		
+
+        $this->db->update('ade_posts', $data, ['ID' => $ID]);
+    }
 
 }
 

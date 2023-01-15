@@ -4,50 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.101.0">
     <title>Home</title>
 
     <!-- Bootstrap core CSS -->
+
     <link href="<?= base_url(); ?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/bootstrap.min.css">
    <!-- style css -->
    <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/ade/css/style.css">
-   <!-- Responsive-->
-   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/responsive.css">
-   <!-- fevicon -->
-   <link rel="icon" href="<?= base_url(); ?>assets/ade/images/fevicon.png" type="image/gif" />
-   <!-- Scrollbar Custom CSS -->
-   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-   <!-- Tweaks for older IEs-->
-   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
-   <!-- owl stylesheets -->
-   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.carousel.min.css">
-   <link rel="stylesheet" href="<?= base_url(); ?>assets/ade/css/owl.theme.default.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+   <link href="<?= base_url(); ?>assets/landing/vendor/aos/aos.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/landing/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/landing/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/landing/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/landing/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/landing/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/landing/css/style.css" rel="stylesheet">
+  <link href="<?= base_url(); ?>assets/img/favicon.png" rel="icon">
+  
 
     
+   <style>
+   
+   </style>
     <!-- Custom styles for this template -->
     <!-- <link href="album.css" rel="stylesheet"> -->
   </head>
@@ -90,18 +68,17 @@
 
 <main role="main">      
 
-    <div class="header_section mb-5">
+    <section class="header_section mb-5">
       <!-- banner section start -->
       <div class="about0_section layout_padding">
          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container">
-                     <<h2 style="text-align: center; margin-top: -20px;color:white; font-size:50px"><b>Pengabdian Mahasiswa Pada Masyarakat</b>  </h2>
-                     <br><br><br><br>
+                     <<h2 style="text-align: center; margin-top: -30px;color:white; font-size:40px"><b>Pengabdian Mahasiswa Pada Masyarakat</b>  </h2>
+                     <br><br>
                      <p class="banner_text">Pengabdian pada masyarakat atau disingkat P2M, merupakan kegiatan yang dilakukan 
-                      sebagai implementasi salah satu pilar dari Tri Dharma Perguruan Tinggi yang diselenggarakan oleh divisi 
-                      advokasi sosial dan politik (Divadsospol). P2M ini merupakan upaya pengembangan masyarakat kearah yang lebih
+                      sebagai implementasi salah satu pilar dari Tri Dharma Perguruan Tinggi. P2M ini merupakan upaya pengembangan masyarakat kearah yang lebih
                        baik dengan melakukan beberapa perbaikan dan perubahan melalui pendidikan, penelitian, dan donasi demi 
                        terwujudnya masyarakat yang maju, tentram, dan harmonis.</p>
                   </div>
@@ -110,49 +87,101 @@
          </div>
       </div>
       <!-- banner section end -->
-   </div>
+      </section>
 
 
-  <div class="album py-6 bg-light">
+  <div class=" py-2 bg-light">
     <div class="container">
 
       <div class="row">
       
-        <?php foreach ($queryAllNgabdi as $post) : ?>
-        <div class="col-md-4">
+        <?php foreach ($pagination as $post) : ?>
+        <div class="col-md-4 mb-4">
          
-          <div class="card mb-4 shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="400" height="220" src="<?= base_url(); ?>assets/ade/img/<?php echo $post->Foto?>"> </img>
+          <div class="card shadow">
+            <img style="width: 400px; height: 220px" src="<?= base_url(); ?>assets/ade/img/<?php echo $post['Foto']?>"> </img>
           
             <div class="card-body">
-              <p class="card-text"><?php echo $post->Judul ?></p>
+              <p class="card-text "><?php echo $post['Judul'] ?></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="<?php echo base_url(); ?>ade_controllers/edit_post/detail_post/<?php echo $post->ID ?>"><button class="btn btn-info">view</button></a>
-                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
-                  <!-- <a href="<?php echo base_url('index.php/ade_controllers/edit_post/halaman_edit') ?>/<?php echo $post->ID ?>"><button >Edit</button></a>  -->
+                  <a href="<?php echo base_url(); ?>ade_controllers/detail_post/fungsi_detail/<?php echo $post['ID'] ?>"><button class="btn btn-info">view</button></a>
+        
                 </div>
-                <small class="text-muted"><?php echo $post->Waktu  ?></small>
+                <small class="text-muted"><?php echo $post['Waktu'] ?></small>
               </div>
             </div>
           </div>
          
         </div>
          <?php endforeach?>
+         <?= $this->pagination->create_links(); ?>
       </div>
     </div>
   </div>
 
 </main>
 
-<footer class="text-muted">
+<footer id="footer">
 
-</footer>
+<div class="footer-top">
+  <div class="container">
+    <div class="row">
 
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-info">
+          <h3>Mikom</h3>
+          <p>
+            Universitas Pendidikan Indonesia <br>
+            Jl. Dr. Setiabudhi No. 229 Bandung <br><br>
+            <strong>Phone:</strong> 022-2013163<br>
+            <strong>Email:</strong> sekuniv_upi@upi.edu<br>
+          </p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="https://www.upi.edu/" target="_blank">UPI</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="https://cs.upi.edu/v2/" target="_blank">CS UPI</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="https://spada.upi.edu/" target="_blank">SPADA</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="https://student.upi.edu/" target="_blank">SIAK</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="https://spot.upi.edu/" target="_blank">SPOT</a></li>
+        </ul>
+      </div>
 
-      
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>ade_controllers/beranda/index">Pengabdian</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>alghi/Home">Penelitian</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>arum/home">Kemahasiswaan</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>makhi/home">Beasiswa</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>hendi/Beranda/index">Forum</a></li>
+        </ul>
+      </div>
+
+      <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
+        <h4>Our Newsletter</h4>
+        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+        <form action="" method="post">
+          <input type="email" name="email"><input type="submit" value="Subscribe">
+        </form>
+
+      </div> -->
+
+    </div>
+  </div>
+</div>
+
+</footer><!-- End Footer -->
   </body>
 </html>

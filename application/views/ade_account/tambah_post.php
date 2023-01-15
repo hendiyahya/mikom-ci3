@@ -117,13 +117,23 @@
 
         <div>
           <label><b>Caption</b></label>
-          <input id="Caption" type="hidden" name="Caption" required>
+          <input id="Caption" type="hidden" name="Caption" placeholder="Masukkan Caption" required>
           <trix-editor input="Caption"></trix-editor>
         </div>
+
         <div class="mb-3">   
           <label for="foto"><b>Foto</b> </label>
            <input type="file" class="form-control" id="preview_gambar" name="gambar" size="20" required>
         </div>
+    
+
+        <div class="mb-3">
+          <label for="disabledSelect" class="form-label">Status</label>
+          <select id="disabledSelect" class="form-select" name="Status">
+          <option value="1">Aktif</option>
+          <option value="0">Nonaktif</option>
+          </select>
+      </div>
 
 
         <!-- <div class="mb-3">
@@ -136,6 +146,20 @@
     </div>
   </div>
 </div>
+<script>
+    function bacaGambar(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#gambar_load').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 
+    $('#preview_gambar').change(function() {
+        bacaGambar(this);
+    });
+</script>
 </body>
 </html>

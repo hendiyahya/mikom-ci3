@@ -78,13 +78,7 @@
         <img class="navbar-brand-dark common" src="<?= base_url(); ?>assets/img/logo.png"  height="30" alt="Logo light">
       </a>
       <a class="btn btn-info mr-3" href="<?= base_url(); ?>index.php/ade_controllers/Dashboard">Dashboard</a>
-      <!-- <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-      </nav> -->
-  
+
     </div>
     
 <div class="container">
@@ -94,36 +88,46 @@
   </div>
 
   <div class="row">
-    <div class="col-md-4 order-md-2 mb-4">
-      
-    </div>
     <div class="col-md-12 order-md-1">
-    <form action="<?= base_url(); ?>ade_controllers/edit_post/fungsiEdit" method="post" enctype="multipart/form-data">
+    <form action="<?= base_url();?>ade_controllers/edit_post/fungsiEdit/<?php echo $post['ID']?>" method="post" enctype="multipart/form-data">
+
 
       <!-- <form action="<?php echo base_url('ade_controllers/edit_post/fungsiEdit') ?>" method="post" class="needs-validation" novalidate> -->
 
-      	<input type="hidden" name="ID" value="<?php echo $queryNgabdiDetail->ID ?>">
+      	<input type="hidden" name="ID" value="<?php echo $post['ID']?>">
         <div class="row">
           <div class="col-md-12 mb-3">
             <label for="Judul"><b>Judul</b></label>
-            <input type="text" class="form-control" name="Judul" placeholder="Masukkan Judul" value="<?php echo $queryNgabdiDetail->Judul ?>" required>
+            <input type="text" class="form-control" name="Judul" placeholder="Masukkan Judul" value="<?php echo $post['Judul'] ?>" required>
           </div>
         </div>  
 
         <div class="mb-3">
           <label for="Waktu"><b>Waktu</b></label>
-          <input type="Date" class="form-control" name="Waktu" value="<?php echo $queryNgabdiDetail->Waktu ?>" required>
+          <input type="Date" class="form-control" name="Waktu" value="<?php echo $post['Waktu']?>" required>
         </div>
 
         <div>
           <label>Caption</label>
-          <input id="Caption" type="hidden" name="Caption" value="<?php echo $queryNgabdiDetail->Caption ?>">
+          <input id="Caption" type="hidden" name="Caption" value="<?php echo $post['Caption']?>">
           <trix-editor input="Caption"></trix-editor>
         </div> 
-        <!-- <div class="form-group">   
-          <label for="foto"><b>Foto</></label>
-           <input type="file" class="form-control" id="preview_gambar" name="gambar" size="20">
-        </div> -->
+        <div class="form-group">
+            <label for="foto"><b>Foto</b> </label>
+            <input type="file" class="form-control" id="preview_gambar" name="gambar" value="<?php echo $post['Foto'] ?>">
+        </div>
+
+        <div class="form-group">
+        <img  width="500" height="250" src="<?= base_url(); ?>assets/ade/img/<?php echo $post['Foto']?>"?>
+       </div>
+
+       <div class="mb-3">
+          <label for="disabledSelect" class="form-label">Status</label>
+          <select id="disabledSelect" class="form-select" name="Status">
+          <option value="1" <?php if ($post['Status'] == 1) { echo 'selected'; }?> >Aktif</option>
+          <option value="0"  <?php if ($post['Status'] == 0) { echo 'selected'; }?>>Nonaktif</option>
+           </select>
+      </div>
 
         <button class="btn mt-5 btn-primary btn-lg btn-block" type="submit">Update Berita Artikel</button>
       </form>

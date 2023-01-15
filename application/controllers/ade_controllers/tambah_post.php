@@ -57,6 +57,7 @@ class tambah_post extends CI_Controller {
 				'Caption' => $this->input->post('Caption', true),
 				'Foto' => $gambar,
 				'user_id' => $data['username']['id_user'],
+				'Status' => $this->input->post('Status', true)
 				// 'datecreated' => date("Y/m/d h:i:sa", time())
 			];
 
